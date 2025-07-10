@@ -3,19 +3,21 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](CONTRIBUTING.md)
 
-This repository provides a comprehensive survey of post-training enhancements that improve core capabilities in deep research systems. We organize the field into seven key areas, each representing critical aspects of modern AI research system development.
+This repository provides a comprehensive survey of post-training enhancements that improve core capabilities in deep research systems. We organize the field into nine key areas, each representing critical aspects of modern AI research system development.
 
 ## Table of Contents
 
 - [Overview](#overview)
 - [Survey Structure](#survey-structure)
 - [Core Capability Areas](#core-capability-areas)
-  - [Planning & Reasoning](#planning--reasoning)
-  - [Query Rewriting](#query-rewriting)
-  - [Knowledge Synthesis](#knowledge-synthesis)
-  - [Tool Utilization](#tool-utilization)
   - [Data Curation](#data-curation)
-  - [Algorithm Design](#algorithm-design)
+  - [Tool Utilization](#tool-utilization)
+  - [Task Understanding, Reasoning and Planning](#task-understanding-reasoning-and-planning)
+  - [Retrieval Decision and Query Rewriting](#retrieval-decision-and-query-rewriting)
+  - [Memory and Context Management](#memory-and-context-management)
+  - [Knowledge Fusion](#knowledge-fusion)
+  - [Self-reflection and Verification](#self-reflection-and-verification)
+  - [Output Synthesis](#output-synthesis)
   - [Evaluations & Benchmarks](#evaluations--benchmarks)
 - [Contributing](#contributing)
 - [Citation](#citation)
