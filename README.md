@@ -3,24 +3,37 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](CONTRIBUTING.md)
 
-This repository provides a comprehensive survey of post-training enhancements that improve core capabilities in deep research systems. We organize the field into nine key areas, each representing critical aspects of modern AI research system development.
+Modern deep research systems (advanced AI research assistants) can be understood as pipelines of distinct but interrelated capabilities. These capabilities correspond to sequential steps in processing a complex user query - from initial understanding to final answer delivery. In this suvery, we break down the key steps and core capabilities (in order) that such a system must possess, and we categorize them into seven main areas:
 
 ## Table of Contents
 
 - [Overview](#overview)
 - [Survey Structure](#survey-structure)
 - [Core Capability Areas](#core-capability-areas)
-  - [Data Curation](#data-curation)
-  - [Tool Utilization](#tool-utilization)
-  - [Task Understanding, Reasoning and Planning](#task-understanding-reasoning-and-planning)
-  - [Retrieval Decision and Query Rewriting](#retrieval-decision-and-query-rewriting)
-  - [Memory and Context Management](#memory-and-context-management)
-  - [Knowledge Fusion](#knowledge-fusion)
-  - [Self-reflection and Verification](#self-reflection-and-verification)
-  - [Output Synthesis](#output-synthesis)
-  - [Evaluations & Benchmarks](#evaluations--benchmarks)
+  - [Query Understanding and Reasoning](#query-understanding)
+  - [Search Strategy Planning & Query Decomposition](#search-strategy-and-query-decomposition)
+  - [Tool Invocation](#tool-invocation)
+  - [Information Retrieval and Processing](#information-retrieval-and-processing)
+  - [Iterative Reasoning and Refinement (Feedback Loop)](#iterative-reasoning-and-refinement)
+  - [Knowledge Fusion and Integration](#knowledge-fusion-and-integration)
+  - [Answer Synthesis and Generation](#answer-synthesis-and-generation)
+- [Data Curation]()
+  - Data Sources
+  - Data Quality Control
+  - Synthetic Data Generation
+  - Data Augmentation
+- [Evaluations & Benchmarks](#evaluations--benchmarks)
+  - Objective Queries
+  - Subjective Queries
+  - Complex tasks
 - [Contributing](#contributing)
 - [Citation](#citation)
+
+This repository fucoses on surveying the post-training enhancements that improve core capabilities in deep research systems. Besides the seven key capabilities, we also discuss data curation and evaluations. Because all the training methods depend on proper data curation and the complex and integrated deep research system needs a comprehensive evaluations and benchmarks. 
+
+![Overview of Survey](assets/survey%20overview.jpg)
+
+*Figure: High-level overview of the core capabilities in deep research systems.*
 
 ## Overview
 
@@ -33,82 +46,92 @@ Post-training enhancements include but are not limited to:
 
 ## Core Capability Areas Covered in this Survey
 
+This survey organizes the core capabilities of deep research systems into the following seven main areas, reflecting the sequential steps in advanced research workflows:
 
-### Data Curation
+### Query Understanding and Reasoning
 
-Improvements in data collection, filtering, quality assessment, and preparation for research and training purposes.
-
-**Key Papers:**
-- [Papers will be added here]
-
----
-
-### Tool Utilization
-
-Enhancements to the ability to effectively use external tools, APIs, and computational resources within research workflows.
+Techniques and enhancements that improve the system's ability to comprehend complex user queries, interpret intent, and perform initial reasoning to frame the research problem.
 
 **Key Papers:**
 - [Papers will be added here]
 
 ---
 
-### Task Understanding, Reasoning and Planning
+### Search Strategy Planning & Query Decomposition
 
-Enhancements to systematic thinking, multi-step problem solving, and strategic planning capabilities in research contexts.
-
-**Key Papers:**
-- [Papers will be added here]
-
----
-
-### Retrieval Decision and Query Rewriting
-
-Techniques for improving query formulation, refinement, and optimization for better information retrieval and research outcomes.
+Methods for breaking down complex queries into sub-questions, planning multi-step search strategies, and orchestrating the research process.
 
 **Key Papers:**
 - [Papers will be added here]
 
 ---
 
-### Memory and Context Management
+### Tool Invocation
 
-Techniques for managing long-term memory, context window utilization, and information retention across multi-step research processes.
-
-**Key Papers:**
-- [Papers will be added here]
-
----
-
-### Knowledge Fusion
-
-Methods for combining, integrating, and synthesizing information from multiple external sources and internal knowledge to generate coherent research insights.
+Approaches that enable the system to select, invoke, and coordinate external tools, APIs, or computational resources as part of the research workflow.
 
 **Key Papers:**
 - [Papers will be added here]
 
 ---
 
-### Self-reflection and Verification
+### Information Retrieval and Processing
 
-Enhancements that enable systems to critically evaluate their own reasoning, verify results, and improve output quality through self-assessment and iterative refinement.
-
-**Key Papers:**
-- [Papers will be added here]
-
----
-
-### Output Synthesis
-
-Enhancements that improve the system's ability to generate coherent, well-structured research outputs by combining findings from multiple sources and analysis steps.
+Techniques for retrieving relevant information from various sources, filtering and processing data, and integrating retrieved content into the research pipeline.
 
 **Key Papers:**
 - [Papers will be added here]
 
 ---
 
-### Evaluations & Benchmarks
+### Iterative Reasoning and Refinement (Feedback Loop)
 
-Comprehensive evaluation methods and benchmarks for assessing post-training enhancements in research system capabilities.
+Enhancements that support multi-step reasoning, self-reflection, verification, and iterative refinement of intermediate results to improve research quality.
+
+**Key Papers:**
+- [Papers will be added here]
+
+---
+
+### Knowledge Fusion and Integration
+
+Methods for synthesizing, integrating, and reconciling information from multiple sources and modalities to form coherent research insights.
+
+**Key Papers:**
+- [Papers will be added here]
+
+---
+
+### Answer Synthesis and Generation
+
+Techniques that enable the system to generate well-structured, comprehensive, and contextually appropriate research outputs based on integrated findings.
+
+**Key Papers:**
+- [Papers will be added here]
+
+---
+
+## Data Curation
+
+Data curation is foundational for all post-training enhancements. This section covers improvements in data sourcing, quality control, synthetic data generation, and augmentation, which are critical for effective training and evaluation of research systems.
+
+- **Data Sources:** Methods for identifying and collecting high-quality data relevant to research tasks.
+- **Data Quality Control:** Techniques for filtering, cleaning, and validating data to ensure reliability.
+- **Synthetic Data Generation:** Approaches for creating artificial data to augment training sets and cover edge cases.
+- **Data Augmentation:** Strategies for expanding and diversifying datasets to improve model robustness.
+
+**Key Papers:**
+- [Papers will be added here]
+
+---
+
+## Evaluations & Benchmarks
+
+Comprehensive evaluation and benchmarking are essential for assessing the effectiveness of post-training enhancements. This section discusses:
+
+- **Objective Queries:** Standardized tasks with clear, measurable answers.
+- **Subjective Queries:** Open-ended or interpretive tasks requiring nuanced evaluation.
+- **Complex Tasks:** Multi-step or integrated research challenges that test the full pipeline.
 
 **Key Papers:**
 - [Papers will be added here]
