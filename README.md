@@ -3,7 +3,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](CONTRIBUTING.md)
 
-Modern deep research systems (advanced AI research assistants) can be understood as pipelines of distinct but interrelated capabilities. These capabilities correspond to sequential steps in processing a complex user query - from initial understanding to final answer delivery. In this suvery, we break down the key steps and core capabilities (in order) that such a system must possess, and we categorize them into seven main areas:
+Modern deep research systems (advanced AI research assistants) can be understood as pipelines of distinct yet interrelated capabilities. These capabilities correspond to sequential steps in processing a complex user query, from initial understanding to final answer generation. In this survey, we decompose these key steps into seven core capabilities, which are presented in order and categorized into the main sections outlined in the table of contents below.
+
+This survey focuses on `post-training enhancements` that improve these core capabilities in deep research systems. In addition to the seven primary capabilities, we also include discussions on data curation and evaluation. Effective post-training methods critically rely on well-curated data, and the complexity of deep research systems demands comprehensive evaluation protocols and benchmarks to assess system performance across diverse tasks.
 
 ## Table of Contents
 
@@ -28,8 +30,6 @@ Modern deep research systems (advanced AI research assistants) can be understood
   - Complex tasks
 - [Contributing](#contributing)
 - [Citation](#citation)
-
-This repository fucoses on surveying the post-training enhancements that improve core capabilities in deep research systems. Besides the seven key capabilities, we also discuss data curation and evaluations. Because all the training methods depend on proper data curation and the complex and integrated deep research system needs a comprehensive evaluations and benchmarks. 
 
 ![Overview of Survey](assets/survey%20overview.jpg)
 
