@@ -10,7 +10,6 @@ This survey focuses on `post-training enhancements` that improve these core capa
 ## Table of Contents
 
 - [Overview](#overview)
-- [Survey Structure](#survey-structure)
 - [Core Capability Areas](#core-capability-areas)
   - [Query Understanding and Reasoning](#query-understanding)
   - [Search Strategy Planning & Query Decomposition](#search-strategy-and-query-decomposition)
