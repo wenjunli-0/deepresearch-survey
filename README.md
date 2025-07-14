@@ -158,7 +158,7 @@ We welcome contributions to this survey! Please see our [Contributing Guidelines
 If you find this survey useful for your research, please consider citing:
 
 ```bibtex
-@misc{deepresearch-survey-2024,
+@misc{deepresearch-survey-2025,
   title={Post-Training Enhancements to Core Capabilities in Deep Research Systems: A Survey},
   author={[Author names will be added]},
   year={2025},
