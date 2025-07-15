@@ -1,7 +1,6 @@
 prompt = """I am conducting a survey on the **Core Capabilities of Deep Research Systems**—systems that iteratively process complex user queries using retrieval, reasoning, and synthesis. These capabilities reflect sequential stages in the research pipeline, from initial interpretation to final answer generation.
 
 For this survey, I define seven core capabilities:
-
 1. Query Understanding and Reasoning
 2. Search Strategy Planning & Query Decomposition
 3. Tool Invocation
