@@ -1,4 +1,4 @@
-# Reinforcement Learning Enhancements for Deep Research Systems: A Survey
+# Reinforcement Learning Foundations for Deep Research Systems: A Survey
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](CONTRIBUTING.md)
@@ -9,14 +9,20 @@ This survey primarily focuses on `reinforcement learning (RL) approaches` for en
 
 Beyond the discussion of RL methods, we also examine evaluation protocols for deep research systems. Due to the complexity and integration of capabilities involved, these systems require comprehensive and multi-faceted benchmarks to accurately assess performance across both objective and open-ended tasks.
 
+<!-- ![Overview of Survey](assets/survey%20overview.jpg) -->
+
+<!-- *Figure: High-level overview of the core capabilities in deep research systems.* -->
+
+
 ## Table of Contents
 
 - [Overview](#overview)
 - [Reinforcement Learning Enhancements]()
-  - [Training Regime & Data Source]()
+  - [Training Regime and Algorithm]()
+  - [Data Synthesis]()
   - [Reward & Credit-Assignment Strategy]()
   - [Agent Topology & Coordination]()
-  - [Environment & Modality Interface]()
+  - [Multimodal and Multi-tool Interface]()
 - [Evaluations & Benchmarks](#evaluations--benchmarks)
   - Objective Queries
   - Subjective Queries
@@ -24,26 +30,20 @@ Beyond the discussion of RL methods, we also examine evaluation protocols for de
 - [Contributing](#contributing)
 - [Citation](#citation)
 
-![Overview of Survey](assets/survey%20overview.jpg)
-
-*Figure: High-level overview of the core capabilities in deep research systems.*
 
 
-[Decoupled Planning and Execution: A Hierarchical Reasoning Framework for Deep Search](https://arxiv.org/pdf/2507.02652). [Codes](https://github.com/RUC-NLPIR/HiRA)
+
+### 0. Workflow and Framework Design (Training-Free Papers)
+**Key Papers:**
+- [Decoupled Planning and Execution: A Hierarchical Reasoning Framework for Deep Search](https://arxiv.org/pdf/2507.02652). [Codes](https://github.com/RUC-NLPIR/HiRA)
+- [Coordinating Search-Informed Reasoning and Reasoning-Guided Search in Claim Verification](http://arxiv.org/pdf/2506.07528). [Codes]()
+- [OWL: Optimized Workforce Learning for General Multi-Agent Assistance in Real-World Task Automation](https://arxiv.org/pdf/2505.23885). [Codes]()
+- [Search-o1: Agentic Search-Enhanced Large Reasoning Models](https://arxiv.org/pdf/2501.05366). [Codes](https://github.com/sunnynexus/Search-o1)
+- [WebThinker: Empowering Large Reasoning Models with Deep Research Capability](https://arxiv.org/pdf/2504.21776). [Codes](https://github.com/RUC-NLPIR/WebThinker)
+- etc.
 
 
-## To be categorized...
-- [DeepRetrieval: Hacking Real Search Engines and Retrievers with Large Language Models via Reinforcement Learning](https://arxiv.org/pdf/2503.00223). [Codes](https://github.com/pat-jj/DeepRetrieval)
-- [WebWalker: Benchmarking LLMs in Web Traversal](https://moonshotai.github.io/Kimi-Researcher/)
-- [Enhancing LLMs' Reasoning-Intensive Multimedia Search Capabilities through Fine-Tuning and Reinforcement Learning](https://arxiv.org/pdf/2505.18831).
-- [Demystifying and Enhancing the Efficiency of Large Language Model Based Search Agents](https://arxiv.org/pdf/2505.12065). [Codes](https://github.com/tiannuo-yang/SearchAgent-X)
-- [Reinforcement Fine-Tuning for Reasoning towards Multi-Step Multi-Source Search in Large Language Models](https://arxiv.org/pdf/2506.08352). [Codes]()
-- [RAG-R1: Incentivize the Search and Reasoning Capabilities of LLMs through Multi-query Parallelism](https://arxiv.org/pdf/2507.02962). [Codes](https://github.com/inclusionAI/AgenticLearning/tree/main/RAG-R1)
-
-
-## technical reports
-- [Kimi-Researcher]()
-
+---
 
 ## Categorization
 
@@ -62,6 +62,18 @@ Determines when learning happens and what data is used. Papers in this category 
 - [EvolveSearch: An Iterative Self-Evolving Search Agent](https://arxiv.org/pdf/2505.22501).
 - [Curriculum Guided Reinforcement Learning for Efficient Multi-Hop Retrieval-Augmented Generation](https://arxiv.org/pdf/2505.17391).
 - [Synthetic Data Generation & Multi-Step RL for Reasoning & Tool Use](https://arxiv.org/pdf/2504.04736).
+- (new) [FrugalRAG: Learning to retrieve and reason for multi-hop QA](https://arxiv.org/pdf/2507.07634). 
+- (new) [Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning](https://arxiv.org/pdf/2506.13654). [Codes](https://egolife-ai.github.io/Ego-R1/)
+- (new) [MEM1: Learning to Synergize Memory and Reasoning for Efficient Long-Horizon Agents](https://arxiv.org/pdf/2506.15841). [Codes](https://github.com/MIT-MI/MEM1)
+- (new) [RAG-R1 : Incentivize the Search and Reasoning Capabilities of LLMs through Multi-query Parallelism](https://arxiv.org/pdf/2507.02962). [Codes](https://github.com/inclusionAI/AgenticLearning/tree/main/RAG-R1)
+- (new) [Search and Refine During Think: Autonomous Retrieval-Augmented Reasoning of LLMs](https://arxiv.org/pdf/2505.11277). [Codes](https://github.com/syr-cn/AutoRefine)
+- (new) [Harnessing the Power of Reinforcement Learning for Language-Model-Based Information Retriever via Query-Document Co-Augmentation](https://arxiv.org/pdf/2506.18670). [Codes](https://github.com/liujm2001/CoAugRetriever)
+- (new) [Harnessing the Power of Reinforcement Learning for Language-Model-Based Information Retriever via Query-Document Co-Augmentation](https://arxiv.org/pdf/2506.18670). [Codes](https://github.com/liujm2001/CoAugRetriever)
+- (new) [VRAG-RL: Empower Vision-Perception-Based RAG for Visually Rich Information Understanding via Iterative Reasoning with Reinforcement Learning](https://arxiv.org/pdf/2505.22019). [Codes](https://github.com/Alibaba-NLP/VRAG)
+- (new) [OWL: Optimized Workforce Learning for General Multi-Agent Assistance in Real-World Task Automation](https://arxiv.org/pdf/2505.23885). [Codes](https://github.com/camel-ai/owl)
+- (new) [Visual Agentic Reinforcement Fine-Tuning](https://arxiv.org/pdf/2505.14246). [Codes](https://github.com/Liuziyu77/Visual-RFT/tree/main/Visual-ARFT)
+- (new) [Reasoning-Table: Exploring Reinforcement Learning for Table Reasoning](https://arxiv.org/pdf/2506.01710). [Codes](https://github.com/MJinXiang/Reasoning-Table)
+- (new) [Heterogeneous Group-Based Reinforcement Learning for LLM-based Multi-Agent Systems](https://arxiv.org/pdf/2506.02718).
 
 ---
 
@@ -70,11 +82,17 @@ Determines when learning happens and what data is used. Papers in this category 
 Introduces novel methods for generating or curating synthetic training data. Examples include graph-based question generation, automated answer verification, or multi-step trace synthesis. Merely proposing a new evaluation dataset does not qualify as data synthesis.
 
 **Key Papers:**
+- [Kimi-Researcher](https://moonshotai.github.io/Kimi-Researcher/)
 - [StepSearch: Igniting LLMs Search Ability via Step-Wise Proximal Policy Optimization](https://arxiv.org/pdf/2505.15107). [Codes](https://github.com/Zillwang/StepSearch)
 - [Go-Browse: Training Web Agents with Structured Exploration](https://arxiv.org/pdf/2506.03533). [Codes](https://github.com/ApGa/Go-Browse)
 - [WebDancer: Towards Autonomous Information Seeking Agency](https://arxiv.org/pdf/2505.22648). [Codes](https://github.com/Alibaba-NLP/WebAgent)
 - [WebSailor: Navigating Super-human Reasoning for Web Agent](https://arxiv.org/pdf/2507.02592). [Codes](https://github.com/Alibaba-NLP/WebAgent)
 - [Synthetic Data Generation & Multi-Step RL for Reasoning & Tool Use](https://arxiv.org/pdf/2504.04736).
+- (new) [MEM1: Learning to Synergize Memory and Reasoning for Efficient Long-Horizon Agents](https://arxiv.org/pdf/2506.15841). [Codes](https://github.com/MIT-MI/MEM1)
+- (new) [Pangu DeepDiver: Adaptive Search Intensity Scaling via Open-Web Reinforcement Learning](https://arxiv.org/pdf/2505.24332).
+- (new) [Enhancing LLMs' Reasoning-Intensive Multimedia Search Capabilities through Fine-Tuning and Reinforcement Learning](https://arxiv.org/pdf/2505.18831). 
+- (new) [Reinforcement Fine-Tuning for Reasoning towards Multi-Step Multi-Source Search in Large Language Models](https://arxiv.org/pdf/2506.08352). [Codes](https://github.com/wentao0429/ReasoningSearch)
+
 
 ---
 
@@ -97,6 +115,17 @@ Designs or analyzes how reward signals are defined or distributed. This includes
 - [Agentic Reasoning and Tool Integration for LLMs via Reinforcement Learning](https://arxiv.org/pdf/2505.01441).
 - [SAGE: Strategy-Adaptive Generation Engine for Query Rewriting](https://www.arxiv.org/pdf/2506.19783).
 - [Lessons from Training Grounded LLMs with Verifiable Rewards](https://arxiv.org/pdf/2506.15522).
+- (new) [FrugalRAG: Learning to retrieve and reason for multi-hop QA](https://arxiv.org/pdf/2507.07634). 
+- (new) [Search and Refine During Think: Autonomous Retrieval-Augmented Reasoning of LLMs](https://arxiv.org/pdf/2505.11277). [Codes](https://github.com/syr-cn/AutoRefine)
+- (new) [Pangu DeepDiver: Adaptive Search Intensity Scaling via Open-Web Reinforcement Learning](https://arxiv.org/pdf/2505.24332).
+- (new) [Harnessing the Power of Reinforcement Learning for Language-Model-Based Information Retriever via Query-Document Co-Augmentation](https://arxiv.org/pdf/2506.18670). [Codes](https://github.com/liujm2001/CoAugRetriever)
+- (new) [Harnessing the Power of Reinforcement Learning for Language-Model-Based Information Retriever via Query-Document Co-Augmentation](https://arxiv.org/pdf/2506.18670). [Codes](https://github.com/liujm2001/CoAugRetriever)
+- (new) [VRAG-RL: Empower Vision-Perception-Based RAG for Visually Rich Information Understanding via Iterative Reasoning with Reinforcement Learning](https://arxiv.org/pdf/2505.22019). [Codes](https://github.com/Alibaba-NLP/VRAG)
+- (new) [Visual Agentic Reinforcement Fine-Tuning](https://arxiv.org/pdf/2505.14246). [Codes](https://github.com/Liuziyu77/Visual-RFT/tree/main/Visual-ARFT)
+- (new) [Reasoning-Table: Exploring Reinforcement Learning for Table Reasoning](https://arxiv.org/pdf/2506.01710). [Codes](https://github.com/MJinXiang/Reasoning-Table)。
+- (new) [Enhancing LLMs' Reasoning-Intensive Multimedia Search Capabilities through Fine-Tuning and Reinforcement Learning](https://arxiv.org/pdf/2505.18831)
+- (new) [Reinforcement Fine-Tuning for Reasoning towards Multi-Step Multi-Source Search in Large Language Models](https://arxiv.org/pdf/2506.08352). [Codes](https://github.com/wentao0429/ReasoningSearch)
+- (new) [Heterogeneous Group-Based Reinforcement Learning for LLM-based Multi-Agent Systems](https://arxiv.org/pdf/2506.02718).
 
 ---
 
@@ -109,6 +138,9 @@ Explores the structural composition of the agent(s). This includes multi-agent s
 - [PaSa: An LLM Agent for Comprehensive Academic Paper Search](https://arxiv.org/pdf/2501.10120). [Codes](https://github.com/bytedance/pasahttps://github.com/bytedance/pasa)
 - [Knowledge-Aware Iterative Retrieval for Multi-Agent Systems](https://arxiv.org/pdf/2503.13275).
 - [Decoupled Planning and Execution: A Hierarchical Reasoning Framework for Deep Search](https://arxiv.org/pdf/2507.02652). [Codes](https://github.com/RUC-NLPIR/HiRA)
+- (new) [Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning](https://arxiv.org/pdf/2506.13654). [Codes](https://egolife-ai.github.io/Ego-R1/)
+- (new) [OWL: Optimized Workforce Learning for General Multi-Agent Assistance in Real-World Task Automation](https://arxiv.org/pdf/2505.23885). [Codes](https://github.com/camel-ai/owl)
+- (new) [Heterogeneous Group-Based Reinforcement Learning for LLM-based Multi-Agent Systems](https://arxiv.org/pdf/2506.02718).
 
 ---
 
@@ -121,15 +153,15 @@ Interacts with `multiple modalities` (e.g., vision, text, audio) or makes use of
 - [MMSearch-R1: Incentivizing LMMs to Search](https://arxiv.org/pdf/2506.20670). [Codes](https://github.com/EvolvingLMMs-Lab/multimodal-search-r1)
 - [Agentic Reasoning and Tool Integration for LLMs via Reinforcement Learning](https://arxiv.org/pdf/2505.01441).
 - [Agent-RLVR: Training Software Engineering Agents via Guidance and Environment Rewards](https://arxiv.org/pdf/2506.11425).
+- (new) [Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning](https://arxiv.org/pdf/2506.13654). [Codes](https://egolife-ai.github.io/Ego-R1/)
+- (new) [Coordinating Search-Informed Reasoning and Reasoning-Guided Search in Claim Verification](http://arxiv.org/pdf/2506.07528).
+- (new) [VTool-R1: VLMs Learn to Think with Images via Reinforcement Learning on Multimodal Tool Use](https://arxiv.org/pdf/2505.19255). [Codes](https://github.com/VTool-R1/VTool-R1)
+- (new) [VRAG-RL: Empower Vision-Perception-Based RAG for Visually Rich Information Understanding via Iterative Reasoning with Reinforcement Learning](https://arxiv.org/pdf/2505.22019). [Codes](https://github.com/Alibaba-NLP/VRAG)
+- (new) [OWL: Optimized Workforce Learning for General Multi-Agent Assistance in Real-World Task Automation](https://arxiv.org/pdf/2505.23885). [Codes](https://github.com/camel-ai/owl)
+- (new) [Visual Agentic Reinforcement Fine-Tuning](https://arxiv.org/pdf/2505.14246). [Codes](https://github.com/Liuziyu77/Visual-RFT/tree/main/Visual-ARFT)
+- (new) [Nemotron-Research-Tool-N1: Tool-Using Language Models with Reinforced Reasoning](https://arxiv.org/pdf/2505.00024). [Codes](https://github.com/NVlabs/Tool-N1)
+- (new) [Enhancing LLMs' Reasoning-Intensive Multimedia Search Capabilities through Fine-Tuning and Reinforcement Learning](https://arxiv.org/pdf/2505.18831)
 
-
----
-
-### 6. Others
-
-Interacts with `multiple modalities` (e.g., vision, text, audio) or makes use of `multiple tool types` beyond simple textual search. Examples include code interpreters, calculators, visual reasoning modules, data extraction tools, or APIs. Work that couples reward across modalities should also be categorized here (not under Category 3).
-
-**Key Papers:**
 
 ---
 
@@ -144,15 +176,6 @@ Comprehensive evaluation and benchmarking are essential for assessing the effect
 **Key Papers:**
 - [Papers will be added here]
 - [](). [Codes]()
-- [](). [Codes]()
-- [](). [Codes]()
-- [](). [Codes]()
-
----
-
-## Papers Outside the Scope of Enhancing Core Capabilities But Covers Other Aspects of Deep Research Systems
-- [Heterogeneous Group-Based Reinforcement Learning for LLM-based Multi-Agent Systems](https://arxiv.org/pdf/2506.02718).
-  - Reinforcement Learning — specifically multi-agent RL via MHGPO.
 - [](). [Codes]()
 - [](). [Codes]()
 - [](). [Codes]()
