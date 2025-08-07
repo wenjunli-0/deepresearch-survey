@@ -52,14 +52,14 @@ Comprehensive evaluation frameworks for assessing the effectiveness of post-trai
 Introduces novel methods for generating or curating synthetic training data. Examples include graph-based question generation, automated answer verification, or multi-step trace synthesis. Merely proposing a new evaluation dataset does not qualify as data synthesis.
 
 **Key Papers:**
-- [Kimi-Researcher](https://moonshotai.github.io/Kimi-Researcher/)
 - [StepSearch: Igniting LLMs Search Ability via Step-Wise Proximal Policy Optimization](https://arxiv.org/pdf/2505.15107). [Codes](https://github.com/Zillwang/StepSearch)
 - [Go-Browse: Training Web Agents with Structured Exploration](https://arxiv.org/pdf/2506.03533). [Codes](https://github.com/ApGa/Go-Browse)
+- [Pangu DeepDiver: Adaptive Search Intensity Scaling via Open-Web Reinforcement Learning](https://arxiv.org/pdf/2505.24332).
 - [WebDancer: Towards Autonomous Information Seeking Agency](https://arxiv.org/pdf/2505.22648). [Codes](https://github.com/Alibaba-NLP/WebAgent)
 - [WebSailor: Navigating Super-human Reasoning for Web Agent](https://arxiv.org/pdf/2507.02592). [Codes](https://github.com/Alibaba-NLP/WebAgent)
+- [WebShaper: Agentically Data Synthesizing via Information-Seeking Formalization](https://arxiv.org/pdf/2507.15061). [Codes](https://github.com/Alibaba-NLP/WebAgent)
 - [Synthetic Data Generation & Multi-Step RL for Reasoning & Tool Use](https://arxiv.org/pdf/2504.04736).
 - (new) [MEM1: Learning to Synergize Memory and Reasoning for Efficient Long-Horizon Agents](https://arxiv.org/pdf/2506.15841). [Codes](https://github.com/MIT-MI/MEM1)
-- (new) [Pangu DeepDiver: Adaptive Search Intensity Scaling via Open-Web Reinforcement Learning](https://arxiv.org/pdf/2505.24332).
 - (new) [Enhancing LLMs' Reasoning-Intensive Multimedia Search Capabilities through Fine-Tuning and Reinforcement Learning](https://arxiv.org/pdf/2505.18831). 
 - (new) [Reinforcement Fine-Tuning for Reasoning towards Multi-Step Multi-Source Search in Large Language Models](https://arxiv.org/pdf/2506.08352). [Codes](https://github.com/wentao0429/ReasoningSearch)
 
