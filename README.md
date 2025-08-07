@@ -1,55 +1,71 @@
-# Reinforcement Learning Foundations for Deep Research Systems: A Survey
+# Reinforcement Learning Foundations for Deep Research Systems: A Survey
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](CONTRIBUTING.md)
 
-Deep research systems are emerging as powerful AI agents capable of performing complex, multi-step information tasks by integrating reasoning, retrieval, and synthesis over long horizons. These systems represent a significant advancement beyond traditional AI assistants, enabling sophisticated information processing that spans multiple reasoning steps, diverse data sources, and complex decision-making processes.
+Deep research systems are agentic AI models designed to tackle complex, multi-step information tasks involving reasoning, search, and synthesis. In this survey, we focus on **reinforcement learning (RL) as the central mechanism** for enhancing these systems, examining its role in enabling end-to-end training and decision-making beyond traditional supervised or preference-based methods.
 
-This survey provides a structured examination of reinforcement learning (RL) as a core mechanism for post-training enhancement of such systems. Rather than decomposing capabilities into sequential stages, we categorize recent advancements along five key research axes: (1) **Training Regime and Algorithm**, (2) **Data Synthesis**, (3) **Reward and Credit-Assignment Strategy**, (4) **Agent Topology and Coordination**, and (5) **Multimodal and Multi-tool Interface**. These axes reflect the diverse but complementary directions through which RL methods improve deep research systems—ranging from curriculum-based training and long-horizon optimization to synthetic data generation, modular agent architectures, and interaction with diverse toolsets and modalities.
+## 📋 Survey Structure
 
-We emphasize end-to-end RL pipelines that go beyond standard supervised or preference optimization techniques, spotlighting over 60 papers that push the boundary of agentic reasoning and decision-making in complex information environments. Our focus on RL-based methods reflects their rapidly evolving and increasingly prominent role in both academia and industry for training agentic, tool-augmented systems.
+This survey is organized around **one primary focus** and **two secondary areas**:
 
-Beyond the discussion of RL methods, we also synthesize current evaluation protocols to highlight the need for more holistic and capability-aware benchmarks. Due to the complexity and integration of capabilities involved, these systems require comprehensive and multi-faceted evaluation approaches to accurately assess performance across both objective and open-ended tasks.
+### **Primary Focus: RL Foundations for Deep Research Systems**
+We organize RL-based advancements along four primary axes that capture the key technical challenges and innovations in developing capable and generalizable research agents:
+
+1. **Data Synthesis** - Novel methods for generating or curating synthetic training data
+2. **Training Regime and Algorithm** - New training procedures beyond standard reinforcement learning
+3. **Reward and Credit-Assignment Strategy** - Design and analysis of reward signals and distribution
+4. **Multimodal and Multi-tool Interface** - Integration of multiple modalities and tool types
+
+### **Secondary Focus 1: Agent Topology & Coordination**
+Explores the structural composition of agents, including multi-agent systems, self-reflective loops, hierarchical planners, and modular sub-agent coordination.
+
+### **Secondary Focus 2: Evaluations & Benchmarks**
+Comprehensive evaluation frameworks for assessing the effectiveness of post-training enhancements, covering objective queries, subjective queries, and general agent tasks.
 
 <!-- ![Overview of Survey](assets/survey%20overview.jpg) -->
 
 <!-- *Figure: High-level overview of the core capabilities in deep research systems.* -->
 
+## 📑 Table of Contents
 
-## Table of Contents
+### Primary Focus: RL Foundations
+- [Data Synthesis](#1-data-synthesis)
+- [Training Regime and Algorithm](#2-training-regime-and-algorithm)
+- [Reward & Credit-Assignment Strategy](#3-reward--credit-assignment-strategy)
+- [Multimodal and Multi-tool Interface](#4-multimodal-and-multi-tool-interface)
 
-- [Overview](#overview)
-- [Reinforcement Learning Enhancements]()
-  - [Training Regime and Algorithm]()
-  - [Data Synthesis]()
-  - [Reward & Credit-Assignment Strategy]()
-  - [Agent Topology & Coordination]()
-  - [Multimodal and Multi-tool Interface]()
+### Secondary Focuses
+- [Agent Topology & Coordination](#agent-topology--coordination)
 - [Evaluations & Benchmarks](#evaluations--benchmarks)
-  - Objective Queries
-  - Subjective Queries
-  - Complex Tasks
+
+### Additional Resources
 - [Contributing](#contributing)
 - [Citation](#citation)
 
+---
 
+## Primary Focus: RL Foundations for Deep Research Systems
 
+### 1. Data Synthesis
 
-### 0. Workflow and Framework Design (Training-Free Papers)
+Introduces novel methods for generating or curating synthetic training data. Examples include graph-based question generation, automated answer verification, or multi-step trace synthesis. Merely proposing a new evaluation dataset does not qualify as data synthesis.
+
 **Key Papers:**
-- [Decoupled Planning and Execution: A Hierarchical Reasoning Framework for Deep Search](https://arxiv.org/pdf/2507.02652). [Codes](https://github.com/RUC-NLPIR/HiRA)
-- [Coordinating Search-Informed Reasoning and Reasoning-Guided Search in Claim Verification](http://arxiv.org/pdf/2506.07528). [Codes]()
-- [OWL: Optimized Workforce Learning for General Multi-Agent Assistance in Real-World Task Automation](https://arxiv.org/pdf/2505.23885). [Codes]()
-- [Search-o1: Agentic Search-Enhanced Large Reasoning Models](https://arxiv.org/pdf/2501.05366). [Codes](https://github.com/sunnynexus/Search-o1)
-- [WebThinker: Empowering Large Reasoning Models with Deep Research Capability](https://arxiv.org/pdf/2504.21776). [Codes](https://github.com/RUC-NLPIR/WebThinker)
-- etc.
-
+- [Kimi-Researcher](https://moonshotai.github.io/Kimi-Researcher/)
+- [StepSearch: Igniting LLMs Search Ability via Step-Wise Proximal Policy Optimization](https://arxiv.org/pdf/2505.15107). [Codes](https://github.com/Zillwang/StepSearch)
+- [Go-Browse: Training Web Agents with Structured Exploration](https://arxiv.org/pdf/2506.03533). [Codes](https://github.com/ApGa/Go-Browse)
+- [WebDancer: Towards Autonomous Information Seeking Agency](https://arxiv.org/pdf/2505.22648). [Codes](https://github.com/Alibaba-NLP/WebAgent)
+- [WebSailor: Navigating Super-human Reasoning for Web Agent](https://arxiv.org/pdf/2507.02592). [Codes](https://github.com/Alibaba-NLP/WebAgent)
+- [Synthetic Data Generation & Multi-Step RL for Reasoning & Tool Use](https://arxiv.org/pdf/2504.04736).
+- (new) [MEM1: Learning to Synergize Memory and Reasoning for Efficient Long-Horizon Agents](https://arxiv.org/pdf/2506.15841). [Codes](https://github.com/MIT-MI/MEM1)
+- (new) [Pangu DeepDiver: Adaptive Search Intensity Scaling via Open-Web Reinforcement Learning](https://arxiv.org/pdf/2505.24332).
+- (new) [Enhancing LLMs' Reasoning-Intensive Multimedia Search Capabilities through Fine-Tuning and Reinforcement Learning](https://arxiv.org/pdf/2505.18831). 
+- (new) [Reinforcement Fine-Tuning for Reasoning towards Multi-Step Multi-Source Search in Large Language Models](https://arxiv.org/pdf/2506.08352). [Codes](https://github.com/wentao0429/ReasoningSearch)
 
 ---
 
-## Categorization
-
-### 1. Training Regime and Algorithm
+### 2. Training Regime and Algorithm
 
 Determines when learning happens and what data is used. Papers in this category propose new training procedures beyond standard reinforcement learning. This includes step-wise optimization, curriculum learning, multi-stage pipelines, or novel long-horizon credit handling (e.g., return decomposition, trajectory truncation). Use the standard `R1-like-training` as the default reference point. Note that vanilla preference optimization alone (e.g., basic DPO) is not considered sufficiently novel for this category.
 
@@ -57,7 +73,7 @@ Determines when learning happens and what data is used. Papers in this category 
 - [Search-R1: Training LLMs to Reason and Leverage Search Engines with Reinforcement Learning](https://arxiv.org/pdf/2503.09516). [Codes](https://github.com/PeterGriffinJin/Search-R1)
 - [ReSearch: Learning to Reason with Search for LLMs via Reinforcement Learning](https://arxiv.org/pdf/2503.19470). [Codes](https://github.com/Agent-RL/ReCall)
 - [R1-Searcher: Incentivizing the Search Capability in LLMs via Reinforcement Learning](https://arxiv.org/pdf/2503.05592). [Codes](https://github.com/RUCAIBox/R1-Searcher)
-- [s3: You Don’t Need That Much Data to Train a Search Agent via RL](https://arxiv.org/pdf/2505.14146). [Codes](https://github.com/pat-jj/s3)
+- [s3: You Don't Need That Much Data to Train a Search Agent via RL](https://arxiv.org/pdf/2505.14146). [Codes](https://github.com/pat-jj/s3)
 - [ZeroSearch: Incentivize the Search Capability of LLMs without Searching](https://arxiv.org/pdf/2505.04588). [Codes](https://github.com/Alibaba-NLP/ZeroSearch)
 - [Writing-RL: Advancing Long-form Writing via Adaptive Curriculum Reinforcement Learning](https://arxiv.org/pdf/2506.05760). [Codes](https://github.com/Tongyi-Zhiwen/Writing-RL)
 - [LongWriter-Zero: Mastering Ultra-Long Text Generation via Reinforcement Learning](https://arxiv.org/pdf/2506.18841). [Data and Model](https://huggingface.co/THU-KEG/)
@@ -79,32 +95,13 @@ Determines when learning happens and what data is used. Papers in this category 
 
 ---
 
-### 2. Data Synthesis
-
-Introduces novel methods for generating or curating synthetic training data. Examples include graph-based question generation, automated answer verification, or multi-step trace synthesis. Merely proposing a new evaluation dataset does not qualify as data synthesis.
-
-**Key Papers:**
-- [Kimi-Researcher](https://moonshotai.github.io/Kimi-Researcher/)
-- [StepSearch: Igniting LLMs Search Ability via Step-Wise Proximal Policy Optimization](https://arxiv.org/pdf/2505.15107). [Codes](https://github.com/Zillwang/StepSearch)
-- [Go-Browse: Training Web Agents with Structured Exploration](https://arxiv.org/pdf/2506.03533). [Codes](https://github.com/ApGa/Go-Browse)
-- [WebDancer: Towards Autonomous Information Seeking Agency](https://arxiv.org/pdf/2505.22648). [Codes](https://github.com/Alibaba-NLP/WebAgent)
-- [WebSailor: Navigating Super-human Reasoning for Web Agent](https://arxiv.org/pdf/2507.02592). [Codes](https://github.com/Alibaba-NLP/WebAgent)
-- [Synthetic Data Generation & Multi-Step RL for Reasoning & Tool Use](https://arxiv.org/pdf/2504.04736).
-- (new) [MEM1: Learning to Synergize Memory and Reasoning for Efficient Long-Horizon Agents](https://arxiv.org/pdf/2506.15841). [Codes](https://github.com/MIT-MI/MEM1)
-- (new) [Pangu DeepDiver: Adaptive Search Intensity Scaling via Open-Web Reinforcement Learning](https://arxiv.org/pdf/2505.24332).
-- (new) [Enhancing LLMs' Reasoning-Intensive Multimedia Search Capabilities through Fine-Tuning and Reinforcement Learning](https://arxiv.org/pdf/2505.18831). 
-- (new) [Reinforcement Fine-Tuning for Reasoning towards Multi-Step Multi-Source Search in Large Language Models](https://arxiv.org/pdf/2506.08352). [Codes](https://github.com/wentao0429/ReasoningSearch)
-
-
----
-
 ### 3. Reward & Credit-Assignment Strategy
 
 Designs or analyzes how reward signals are defined or distributed. This includes final outcome rewards, intermediate/step-level rewards, and shaped or multi-component objective functions. Long-horizon return handling is not categorized here (see Category 1), or modality-specific reward coupling (see Category 5).
 
 **Key Papers:**
 - [Reinforcing Multi-Turn Reasoning in LLM Agents via Turn-Level Credit Assignment](https://arxiv.org/pdf/2505.11821). [Codes](https://github.com/SiliangZeng/Multi-Turn-RL-Agent)
-- [s3: You Don’t Need That Much Data to Train a Search Agent via RL](https://arxiv.org/pdf/2505.14146). [Codes](https://github.com/pat-jj/s3)
+- [s3: You Don't Need That Much Data to Train a Search Agent via RL](https://arxiv.org/pdf/2505.14146). [Codes](https://github.com/pat-jj/s3)
 - [PaSa: An LLM Agent for Comprehensive Academic Paper Search](https://arxiv.org/pdf/2501.10120). [Codes](https://github.com/bytedance/pasahttps://github.com/bytedance/pasa)
 - [O2-Searcher: A Searching-based Agent Model for Open-Domain Open-Ended Question Answering](https://arxiv.org/pdf/2505.16582). [Codes](https://github.com/KnowledgeXLab/O2-Searcher)
 - [R1-Searcher++: Incentivizing the Dynamic Knowledge Acquisition of LLMs via Reinforcement Learning](https://arxiv.org/pdf/2505.17005). [Codes](https://github.com/RUCAIBox/R1-Searcher-plus)
@@ -131,22 +128,7 @@ Designs or analyzes how reward signals are defined or distributed. This includes
 
 ---
 
-### 4. Agent Topology & Coordination
-
-Explores the structural composition of the agent(s). This includes multi-agent systems, self-reflective loops, hierarchical planners, expert routing, or modular sub-agent coordination.
-
-**Key Papers:**
-- [DeepResearcher: Scaling Deep Research via Reinforcement Learning in Real-world Environments](https://arxiv.org/pdf/2504.03160). [Codes](https://github.com/GAIR-NLP/DeepResearcher)
-- [PaSa: An LLM Agent for Comprehensive Academic Paper Search](https://arxiv.org/pdf/2501.10120). [Codes](https://github.com/bytedance/pasahttps://github.com/bytedance/pasa)
-- [Knowledge-Aware Iterative Retrieval for Multi-Agent Systems](https://arxiv.org/pdf/2503.13275).
-- [Decoupled Planning and Execution: A Hierarchical Reasoning Framework for Deep Search](https://arxiv.org/pdf/2507.02652). [Codes](https://github.com/RUC-NLPIR/HiRA)
-- (new) [Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning](https://arxiv.org/pdf/2506.13654). [Codes](https://egolife-ai.github.io/Ego-R1/)
-- (new) [OWL: Optimized Workforce Learning for General Multi-Agent Assistance in Real-World Task Automation](https://arxiv.org/pdf/2505.23885). [Codes](https://github.com/camel-ai/owl)
-- (new) [Heterogeneous Group-Based Reinforcement Learning for LLM-based Multi-Agent Systems](https://arxiv.org/pdf/2506.02718).
-
----
-
-### 5. Multimodal and Multi-tool Interface
+### 4. Multimodal and Multi-tool Interface
 
 Interacts with `multiple modalities` (e.g., vision, text, audio) or makes use of `multiple tool types` beyond simple textual search. Examples include code interpreters, calculators, visual reasoning modules, data extraction tools, or APIs. Work that couples reward across modalities should also be categorized here (not under Category 3).
 
@@ -164,16 +146,30 @@ Interacts with `multiple modalities` (e.g., vision, text, audio) or makes use of
 - (new) [Nemotron-Research-Tool-N1: Tool-Using Language Models with Reinforced Reasoning](https://arxiv.org/pdf/2505.00024). [Codes](https://github.com/NVlabs/Tool-N1)
 - (new) [Enhancing LLMs' Reasoning-Intensive Multimedia Search Capabilities through Fine-Tuning and Reinforcement Learning](https://arxiv.org/pdf/2505.18831)
 
+---
+
+## Secondary Focus 1: Agent Topology & Coordination
+
+Explores the structural composition of the agent(s). This includes multi-agent systems, self-reflective loops, hierarchical planners, expert routing, or modular sub-agent coordination.
+
+**Key Papers:**
+- [DeepResearcher: Scaling Deep Research via Reinforcement Learning in Real-world Environments](https://arxiv.org/pdf/2504.03160). [Codes](https://github.com/GAIR-NLP/DeepResearcher)
+- [PaSa: An LLM Agent for Comprehensive Academic Paper Search](https://arxiv.org/pdf/2501.10120). [Codes](https://github.com/bytedance/pasahttps://github.com/bytedance/pasa)
+- [Knowledge-Aware Iterative Retrieval for Multi-Agent Systems](https://arxiv.org/pdf/2503.13275).
+- [Decoupled Planning and Execution: A Hierarchical Reasoning Framework for Deep Search](https://arxiv.org/pdf/2507.02652). [Codes](https://github.com/RUC-NLPIR/HiRA)
+- (new) [Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning](https://arxiv.org/pdf/2506.13654). [Codes](https://egolife-ai.github.io/Ego-R1/)
+- (new) [OWL: Optimized Workforce Learning for General Multi-Agent Assistance in Real-World Task Automation](https://arxiv.org/pdf/2505.23885). [Codes](https://github.com/camel-ai/owl)
+- (new) [Heterogeneous Group-Based Reinforcement Learning for LLM-based Multi-Agent Systems](https://arxiv.org/pdf/2506.02718).
 
 ---
 
-## Evaluations & Benchmarks
+## Secondary Focus 2: Evaluations & Benchmarks
 
 Comprehensive evaluation and benchmarking are essential for assessing the effectiveness of post-training enhancements. This section discusses:
 
 - **Objective Queries:** Standardized tasks with clear, measurable answers.
 - **Subjective Queries:** Open-ended or interpretive tasks requiring nuanced evaluation.
-- **Complex Tasks:** Multi-step or integrated research challenges that test the full pipeline.
+- **General Agent Tasks:** Multi-step or integrated research challenges that test the full pipeline.
 
 **Key Papers:**
 - [Papers will be added here]
@@ -182,10 +178,9 @@ Comprehensive evaluation and benchmarking are essential for assessing the effect
 - [](). [Codes]()
 - [](). [Codes]()
 
-
 ---
 
-## Contributing
+## 🤝 Contributing
 
 We welcome contributions to this survey! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details on how to:
 
@@ -201,7 +196,7 @@ We welcome contributions to this survey! Please see our [Contributing Guidelines
 3. Add your content following the established format
 4. Submit a pull request with a clear description of your changes
 
-## Citation
+## 📚 Citation
 
 If you find this survey useful for your research, please consider citing:
 
@@ -219,6 +214,6 @@ If you find this survey useful for your research, please consider citing:
 **Last Updated:** [Date will be updated]  
 **Maintainers:** [Maintainer information will be added]
 
-## License
+## 📄 License
 
 This work is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
