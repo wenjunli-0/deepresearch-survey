@@ -76,6 +76,7 @@ Determines when learning happens and what data is used. Papers in this category 
 - [s3: You Don't Need That Much Data to Train a Search Agent via RL](https://arxiv.org/pdf/2505.14146). <a href="https://github.com/pat-jj/s3" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [ZeroSearch: Incentivize the Search Capability of LLMs without Searching](https://arxiv.org/pdf/2505.04588). <a href="https://github.com/Alibaba-NLP/ZeroSearch" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [Writing-RL: Advancing Long-form Writing via Adaptive Curriculum Reinforcement Learning](https://arxiv.org/pdf/2506.05760). <a href="https://github.com/Tongyi-Zhiwen/Writing-RL" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [Agentic Reinforced Policy Optimization](https://github.com/dongguanting/ARPO). <a href="https://github.com/SiliangZeng/Multi-Turn-RL-Agent" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning](https://arxiv.org/pdf/2506.13654). <a href="https://egolife-ai.github.io/Ego-R1/" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [MEM1: Learning to Synergize Memory and Reasoning for Efficient Long-Horizon Agents](https://arxiv.org/pdf/2506.15841). <a href="https://github.com/MIT-MI/MEM1" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [RAG-R1 : Incentivize the Search and Reasoning Capabilities of LLMs through Multi-query Parallelism](https://arxiv.org/pdf/2507.02962). <a href="https://github.com/inclusionAI/AgenticLearning/tree/main/RAG-R1" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
@@ -100,6 +101,7 @@ Determines when learning happens and what data is used. Papers in this category 
 Designs or analyzes how reward signals are defined or distributed. This includes final outcome rewards, intermediate/step-level rewards, and shaped or multi-component objective functions. Long-horizon return handling is not categorized here (see Category 1), or modality-specific reward coupling (see Category 5).
 
 **Key Papers:**
+- [Agentic Reinforced Policy Optimization](https://github.com/dongguanting/ARPO). <a href="https://github.com/SiliangZeng/Multi-Turn-RL-Agent" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [Reinforcing Multi-Turn Reasoning in LLM Agents via Turn-Level Credit Assignment](https://arxiv.org/pdf/2505.11821). <a href="https://github.com/SiliangZeng/Multi-Turn-RL-Agent" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [s3: You Don't Need That Much Data to Train a Search Agent via RL](https://arxiv.org/pdf/2505.14146). <a href="https://github.com/pat-jj/s3" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [PaSa: An LLM Agent for Comprehensive Academic Paper Search](https://arxiv.org/pdf/2501.10120). <a href="https://github.com/bytedance/pasahttps://github.com/bytedance/pasa" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
@@ -134,6 +136,7 @@ Interacts with `multiple modalities` (e.g., vision, text, audio) or makes use of
 
 **Key Papers:**
 - [ReTool: Reinforcement Learning for Strategic Tool Use in LLMs](https://arxiv.org/pdf/2504.11536). <a href="https://retool-rl.github.io/" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [Tool-Star: Empowering LLM-Brained Multi-Tool Reasoner via Reinforcement Learning](https://github.com/dongguanting/Tool-Star). <a href="https://retool-rl.github.io/" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [MMSearch-R1: Incentivizing LMMs to Search](https://arxiv.org/pdf/2506.20670). <a href="https://github.com/EvolvingLMMs-Lab/multimodal-search-r1" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning](https://arxiv.org/pdf/2506.13654). <a href="https://egolife-ai.github.io/Ego-R1/" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [VTool-R1: VLMs Learn to Think with Images via Reinforcement Learning on Multimodal Tool Use](https://arxiv.org/pdf/2505.19255). <a href="https://github.com/VTool-R1/VTool-R1" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
@@ -154,8 +157,9 @@ Explores the structural composition of the agent(s). This includes multi-agent s
 
 **Key Papers:**
 - [DeepResearcher: Scaling Deep Research via Reinforcement Learning in Real-world Environments](https://arxiv.org/pdf/2504.03160). <a href="https://github.com/GAIR-NLP/DeepResearcher" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
-- [PaSa: An LLM Agent for Comprehensive Academic Paper Search](https://arxiv.org/pdf/2501.10120). <a href="https://github.com/bytedance/pasahttps://github.com/bytedance/pasa" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [WebThinker: Empowering Large Reasoning Models with Deep Research Capability](https://arxiv.org/pdf/2504.21776). <a href="https://github.com/RUC-NLPIR/WebThinker" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [Decoupled Planning and Execution: A Hierarchical Reasoning Framework for Deep Search](https://arxiv.org/pdf/2507.02652). <a href="https://github.com/RUC-NLPIR/HiRA" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [PaSa: An LLM Agent for Comprehensive Academic Paper Search](https://arxiv.org/pdf/2501.10120). <a href="https://github.com/bytedance/pasahttps://github.com/bytedance/pasa" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning](https://arxiv.org/pdf/2506.13654). <a href="https://egolife-ai.github.io/Ego-R1/" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [OWL: Optimized Workforce Learning for General Multi-Agent Assistance in Real-World Task Automation](https://arxiv.org/pdf/2505.23885). <a href="https://github.com/camel-ai/owl" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [Heterogeneous Group-Based Reinforcement Learning for LLM-based Multi-Agent Systems](https://arxiv.org/pdf/2506.02718).
