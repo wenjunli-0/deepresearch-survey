@@ -14,9 +14,9 @@ We organize RL-based advancements along three primary axes that capture the key 
 
 1. **Data Synthesis & Curation** - Methods to generate, select, and validate trajectory data that support multi-hop reasoning and robust tool interaction.
 2. **RL Methods for Agentic Research** - Training-time choices that determine decision quality over trajectories: training regimes and optimization structure; reward design and credit assignment for long horizons and multi-objective trade-offs; and integration of multimodal perception with multi-tool action interfaces.
-  2.1 **Training Regimes and Optimization Structure** - New training procedures beyond standard reinforcement learning
-  2.2 **Reward Design and Credit Assignment** - Design and analysis of reward signals and distribution for long horizons and multi-objective trade-offs
-  2.3 **Multimodal and Multi-Tool Integration** - Integration of multimodal perception with multi-tool action interfaces
+   - **2.1 Training Regimes and Optimization Structure** - New training procedures beyond standard reinforcement learning
+   - **2.2 Reward Design and Credit Assignment** - Design and analysis of reward signals and distribution for long horizons and multi-objective trade-offs
+   - **2.3 Multimodal and Multi-Tool Integration** - Integration of multimodal perception with multi-tool action interfaces
 3. **Systems & Infrastructure** - Scaffolding that makes agentic RL feasible at scale: reproducible environments and tool/API sandboxes; asynchronous actors and rollout collection; caching and rate-limit handling; compute/memory management; distributed training; and logging/evaluation harnesses.
 
 ### **Secondary Focus 1: Agent Topology & Coordination**
