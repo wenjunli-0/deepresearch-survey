@@ -3,41 +3,42 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](CONTRIBUTING.md)
 
-Deep research systems are agentic AI models designed to tackle complex, multi-step information tasks involving reasoning, search, and synthesis. In this survey, we focus on **reinforcement learning (RL) as the central mechanism** for enhancing these systems, examining its role in enabling end-to-end training and decision-making beyond traditional supervised or preference-based methods.
+Deep research systems are agentic AI models that solve complex, multi-step information tasks by coordinating reasoning, search, and tool use—often under partial observability and non-stationary conditions. This survey centers on **reinforcement learning (RL) as the primary driver** of recent progress, arguing that trajectory-level optimization, exploration, and credit assignment are essential for end-to-end decision quality in tool-rich environments.
 
 ## 📋 Survey Structure
 
 This survey is organized around **one primary focus** and **two secondary areas**:
 
 ### **Primary Focus: RL Foundations for Deep Research Systems**
-We organize RL-based advancements along four primary axes that capture the key technical challenges and innovations in developing capable and generalizable research agents:
+We organize RL-based advancements along three primary axes that capture the key technical challenges and innovations in developing capable and generalizable research agents:
 
-1. **Data Synthesis** - Novel methods for generating or curating synthetic training data
-2. **Training Regime and Algorithm** - New training procedures beyond standard reinforcement learning
-3. **Reward and Credit-Assignment Strategy** - Design and analysis of reward signals and distribution
-4. **Multimodal and Multi-tool Interface** - Integration of multiple modalities and tool types
+1. **Data Synthesis & Curation** - Methods to generate, select, and validate trajectory data that support multi-hop reasoning and robust tool interaction.
+2. **RL Methods for Agentic Research** - Training-time choices that determine decision quality over trajectories: training regimes and optimization structure; reward design and credit assignment for long horizons and multi-objective trade-offs; and integration of multimodal perception with multi-tool action interfaces.
+  2.1 **Training Regimes and Optimization Structure** - New training procedures beyond standard reinforcement learning
+  2.2 **Reward Design and Credit Assignment** - Design and analysis of reward signals and distribution for long horizons and multi-objective trade-offs
+  2.3 **Multimodal and Multi-Tool Integration** - Integration of multimodal perception with multi-tool action interfaces
+3. **Systems & Infrastructure** - Scaffolding that makes agentic RL feasible at scale: reproducible environments and tool/API sandboxes; asynchronous actors and rollout collection; caching and rate-limit handling; compute/memory management; distributed training; and logging/evaluation harnesses.
 
 ### **Secondary Focus 1: Agent Topology & Coordination**
-Explores the structural composition of agents, including multi-agent systems, self-reflective loops, hierarchical planners, and modular sub-agent coordination.
+Explores hierarchical, modular, and multi-agent designs for structural composition of research agents.
 
 ### **Secondary Focus 2: Evaluations & Benchmarks**
-Comprehensive evaluation frameworks for assessing the effectiveness of post-training enhancements, covering objective queries, subjective queries, and general agent tasks.
+Comprehensive evaluation frameworks for holistic, tool-interactive assessment of research agents.
 
-<!-- ![Overview of Survey](assets/survey%20overview.jpg) -->
-
-<!-- *Figure: High-level overview of the core capabilities in deep research systems.* -->
 
 ## 📑 Table of Contents
 
 ### Primary Focus: RL Foundations
-- [Data Synthesis](#1-data-synthesis)
-- [Training Regime and Algorithm](#2-training-regime-and-algorithm)
-- [Reward & Credit-Assignment Strategy](#3-reward--credit-assignment-strategy)
-- [Multimodal and Multi-tool Interface](#4-multimodal-and-multi-tool-interface)
+- [Data Synthesis & Curation](#1-data-synthesis--curation)
+- [RL Methods for Agentic Research](#2-rl-methods-for-agentic-research)
+  - [Training Regimes and Optimization Structure](#21-training-regimes-and-optimization-structure)
+  - [Reward Design and Credit Assignment](#22-reward-design-and-credit-assignment)
+  - [Multimodal and Multi-Tool Integration](#23-multimodal-and-multi-tool-integration)
+- [Systems & Infrastructure](#3-systems--infrastructure)
 
 ### Secondary Focuses
-- [Agent Topology & Coordination](#agent-topology--coordination)
-- [Evaluations & Benchmarks](#evaluations--benchmarks)
+- [Agent Topology & Coordination](#secondary-focus-1-agent-topology--coordination)
+- [Evaluations & Benchmarks](#secondary-focus-2-evaluations--benchmarks)
 
 ### Additional Resources
 - [Contributing](#contributing)
@@ -47,9 +48,9 @@ Comprehensive evaluation frameworks for assessing the effectiveness of post-trai
 
 ## Primary Focus: RL Foundations for Deep Research Systems
 
-### 1. Data Synthesis
+### 1. Data Synthesis & Curation
 
-Introduces novel methods for generating or curating synthetic training data. Examples include graph-based question generation, automated answer verification, or multi-step trace synthesis. Merely proposing a new evaluation dataset does not qualify as data synthesis.
+Methods to generate, select, and validate trajectory data that support multi-hop reasoning and robust tool interaction. Introduces novel methods for generating or curating synthetic training data. Examples include graph-based question generation, automated answer verification, or multi-step trace synthesis. Merely proposing a new evaluation dataset does not qualify as data synthesis.
 
 **Key Papers:**
 - [StepSearch: Igniting LLMs Search Ability via Step-Wise Proximal Policy Optimization](https://arxiv.org/pdf/2505.15107). <a href="https://github.com/Zillwang/StepSearch" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
@@ -65,7 +66,11 @@ Introduces novel methods for generating or curating synthetic training data. Exa
 
 ---
 
-### 2. Training Regime and Algorithm
+### 2. RL Methods for Agentic Research
+
+Training-time choices that determine decision quality over trajectories: training regimes and optimization structure; reward design and credit assignment for long horizons and multi-objective trade-offs; and integration of multimodal perception with multi-tool action interfaces.
+
+#### 2.1 Training Regimes and Optimization Structure
 
 Determines when learning happens and what data is used. Papers in this category propose new training procedures beyond standard reinforcement learning. This includes step-wise optimization, curriculum learning, multi-stage pipelines, or novel long-horizon credit handling (e.g., return decomposition, trajectory truncation). Use the standard `R1-like-training` as the default reference point. Note that vanilla preference optimization alone (e.g., basic DPO) is not considered sufficiently novel for this category.
 
@@ -96,9 +101,9 @@ Determines when learning happens and what data is used. Papers in this category 
 
 ---
 
-### 3. Reward & Credit-Assignment Strategy
+#### 2.2 Reward Design and Credit Assignment
 
-Designs or analyzes how reward signals are defined or distributed. This includes final outcome rewards, intermediate/step-level rewards, and shaped or multi-component objective functions. Long-horizon return handling is not categorized here (see Category 1), or modality-specific reward coupling (see Category 5).
+Designs or analyzes how reward signals are defined or distributed for long horizons and multi-objective trade-offs. This includes final outcome rewards, intermediate/step-level rewards, and shaped or multi-component objective functions. Long-horizon return handling is not categorized here (see Category 1), or modality-specific reward coupling (see Category 2.3).
 
 **Key Papers:**
 - [Agentic Reinforced Policy Optimization](https://github.com/dongguanting/ARPO). <a href="https://github.com/SiliangZeng/Multi-Turn-RL-Agent" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
@@ -130,9 +135,9 @@ Designs or analyzes how reward signals are defined or distributed. This includes
 
 ---
 
-### 4. Multimodal and Multi-tool Interface
+#### 2.3 Multimodal and Multi-Tool Integration
 
-Interacts with `multiple modalities` (e.g., vision, text, audio) or makes use of `multiple tool types` beyond simple textual search. Examples include code interpreters, calculators, visual reasoning modules, data extraction tools, or APIs. Work that couples reward across modalities should also be categorized here (not under Category 3).
+Integration of multimodal perception with multi-tool action interfaces. Interacts with `multiple modalities` (e.g., vision, text, audio) or makes use of `multiple tool types` beyond simple textual search. Examples include code interpreters, calculators, visual reasoning modules, data extraction tools, or APIs. Work that couples reward across modalities should also be categorized here (not under Category 2.2).
 
 **Key Papers:**
 - [ReTool: Reinforcement Learning for Strategic Tool Use in LLMs](https://arxiv.org/pdf/2504.11536). <a href="https://retool-rl.github.io/" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
@@ -151,9 +156,24 @@ Interacts with `multiple modalities` (e.g., vision, text, audio) or makes use of
 
 ---
 
+### 3. Systems & Infrastructure
+
+Scaffolding that makes agentic RL feasible at scale: reproducible environments and tool/API sandboxes; asynchronous actors and rollout collection; caching and rate-limit handling; compute/memory management; distributed training; and logging/evaluation harnesses.
+
+**Key Papers and Repos:**
+- [AReaL: A Large-Scale Asynchronous Reinforcement Learning System for Language Reasoning](https://arxiv.org/pdf/2505.24298v2). <a href="https://github.com/inclusionAI/AReaL/" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [rLLM – RL for Post-Training Language Agents](https://agentica-project.com/). <a href="https://github.com/agentica-project/rllm" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [ROLL – Reinforcement Learning Optimization for LLMs](https://arxiv.org/pdf/2506.06122). <a href="https://github.com/alibaba/ROLL" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- Qwen-Agent – Agent Framework for Qwen LLMs. <a href="https://github.com/QwenLM/Qwen-Agent" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [OpenR – Open-Source Reasoning & RL Platform](https://arxiv.org/pdf/2410.09671) <a href="https://openreasoner.github.io/" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [Agent Lightning – General RL Training for AI Agents](https://arxiv.org/pdf/2508.03680v1) <a href="https://github.com/microsoft/agent-lightning" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [verl – Volcano Engine RL Training Library](https://arxiv.org/pdf/2409.19256v2) <a href="https://github.com/volcengine/verl" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+
+---
+
 ## Secondary Focus 1: Agent Topology & Coordination
 
-Explores the structural composition of the agent(s). This includes multi-agent systems, self-reflective loops, hierarchical planners, expert routing, or modular sub-agent coordination.
+Explores hierarchical, modular, and multi-agent designs for structural composition of research agents. This includes multi-agent systems, self-reflective loops, hierarchical planners, expert routing, or modular sub-agent coordination.
 
 **Key Papers:**
 - [DeepResearcher: Scaling Deep Research via Reinforcement Learning in Real-world Environments](https://arxiv.org/pdf/2504.03160). <a href="https://github.com/GAIR-NLP/DeepResearcher" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
@@ -169,7 +189,7 @@ Explores the structural composition of the agent(s). This includes multi-agent s
 
 ## Secondary Focus 2: Evaluations & Benchmarks
 
-Comprehensive evaluation and benchmarking are essential for assessing the effectiveness of post-training enhancements. This section discusses:
+Comprehensive evaluation frameworks for holistic, tool-interactive assessment of research agents. This section discusses:
 
 - **Objective Queries:** Standardized tasks with clear, measurable answers.
 - **Subjective Queries:** Open-ended or interpretive tasks requiring nuanced evaluation.
@@ -202,11 +222,12 @@ If you find this survey useful for your research, please consider citing:
 
 ```bibtex
 @misc{deepresearch-survey-2025,
-  title={Post-Training Enhancements to Core Capabilities in Deep Research Systems: A Survey},
+  title={Reinforcement Learning Foundations for Deep Research Systems: A Survey},
   author={[Author names will be added]},
   year={2025},
   url={https://github.com/[username]/deepresearch-survey}
 }
+```
 ```
 
 ---
