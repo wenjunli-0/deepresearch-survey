@@ -53,6 +53,8 @@ Comprehensive evaluation frameworks for holistic, tool-interactive assessment of
 Methods to generate, select, and validate trajectory data that support multi-hop reasoning and robust tool interaction. Introduces novel methods for generating or curating synthetic training data. Examples include graph-based question generation, automated answer verification, or multi-step trace synthesis. Merely proposing a new evaluation dataset does not qualify as data synthesis.
 
 **Key Papers:**
+- [Search-R1: Training LLMs to Reason and Leverage Search Engines with Reinforcement Learning](https://arxiv.org/pdf/2503.09516). <a href="https://github.com/PeterGriffinJin/Search-R1" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [DeepResearcher: Scaling Deep Research via Reinforcement Learning in Real-world Environments](https://arxiv.org/pdf/2504.03160). <a href="https://github.com/GAIR-NLP/DeepResearcher" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [StepSearch: Igniting LLMs Search Ability via Step-Wise Proximal Policy Optimization](https://arxiv.org/pdf/2505.15107). <a href="https://github.com/Zillwang/StepSearch" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [Go-Browse: Training Web Agents with Structured Exploration](https://arxiv.org/pdf/2506.03533). <a href="https://github.com/ApGa/Go-Browse" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [WebDancer: Towards Autonomous Information Seeking Agency](https://arxiv.org/pdf/2505.22648). <a href="https://github.com/Alibaba-NLP/WebAgent" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
