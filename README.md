@@ -32,6 +32,7 @@ This section provides an overview of existing surveys in related areas to deep r
 **Key Related Surveys:**
 - [Deep Research Agents: A Systematic Examination And Roadmap](https://arxiv.org/pdf/2506.18096)
 - [A Survey on AI Search with Large Language Models](https://www.preprints.org/frontend/manuscript/79453d62cbbfce9ac42239071098a3d9/download_pub)
+- [A Survey of LLM-based Deep Search Agents: Paradigm, Optimization, Evaluation, and Challenges](https://arxiv.org/pdf/2508.05668)
 - [A Comprehensive Survey of Deep Research: Systems, Methodologies, and Applications](https://arxiv.org/pdf/2506.12594)
 - [Towards Agentic RAG with Deep Reasoning: A Survey of RAG-Reasoning Systems in LLMs](https://arxiv.org/pdf/2507.09477)
 
