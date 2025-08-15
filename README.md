@@ -25,12 +25,27 @@ Explores hierarchical, modular, and multi-agent designs for structural compositi
 ### **Secondary Focus 2: Evaluations & Benchmarks**
 Comprehensive evaluation frameworks for holistic, tool-interactive assessment of research agents.
 
+## 📚 Related Surveys
+
+This section provides an overview of existing surveys in related areas to deep research systems.
+
+**Key Related Surveys:**
+- [Deep Research Agents: A Systematic Examination And Roadmap](https://arxiv.org/pdf/2506.18096)
+- [A Survey on AI Search with Large Language Models](https://www.preprints.org/frontend/manuscript/79453d62cbbfce9ac42239071098a3d9/download_pub)
+- [A Comprehensive Survey of Deep Research: Systems, Methodologies, and Applications](https://arxiv.org/pdf/2506.12594)
+- [Towards Agentic RAG with Deep Reasoning: A Survey of RAG-Reasoning Systems in LLMs](https://arxiv.org/pdf/2507.09477)
+
+---
+
 
 ## 📑 Table of Contents
 
+### Introduction
+- [Related Surveys](#-related-surveys)
+
 ### Primary Focus: RL Foundations
 - [Data Synthesis & Curation](#1-data-synthesis--curation)
-- [RL Methods for Agentic Research](#2-rl-methods-for-agentic-research)
+- [RL Methods for Agentsuric Research](#2-rl-methods-for-agentic-research)
   - [Training Regimes and Optimization Structure](#21-training-regimes-and-optimization-structure)
   - [Reward Design and Credit Assignment](#22-reward-design-and-credit-assignment)
   - [Multimodal and Multi-Tool Integration](#23-multimodal-and-multi-tool-integration)
