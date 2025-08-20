@@ -194,12 +194,14 @@ Scaffolding that makes agentic RL feasible at scale: reproducible environments a
 Explores hierarchical, modular, and multi-agent designs for structural composition of research agents. This includes multi-agent systems, self-reflective loops, hierarchical planners, expert routing, or modular sub-agent coordination.
 
 **Key Papers:**
+- [OWL: Optimized Workforce Learning for General Multi-Agent Assistance in Real-World Task Automation](https://arxiv.org/pdf/2505.23885). <a href="https://github.com/camel-ai/owl" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [DeepResearcher: Scaling Deep Research via Reinforcement Learning in Real-world Environments](https://arxiv.org/pdf/2504.03160). <a href="https://github.com/GAIR-NLP/DeepResearcher" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [WebThinker: Empowering Large Reasoning Models with Deep Research Capability](https://arxiv.org/pdf/2504.21776). <a href="https://github.com/RUC-NLPIR/WebThinker" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [Decoupled Planning and Execution: A Hierarchical Reasoning Framework for Deep Search](https://arxiv.org/pdf/2507.02652). <a href="https://github.com/RUC-NLPIR/HiRA" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [PaSa: An LLM Agent for Comprehensive Academic Paper Search](https://arxiv.org/pdf/2501.10120). <a href="https://github.com/bytedance/pasahttps://github.com/bytedance/pasa" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
-- [Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning](https://arxiv.org/pdf/2506.13654). <a href="https://egolife-ai.github.io/Ego-R1/" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
-- [OWL: Optimized Workforce Learning for General Multi-Agent Assistance in Real-World Task Automation](https://arxiv.org/pdf/2505.23885). <a href="https://github.com/camel-ai/owl" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [Optimas: Optimizing Compound AI Systems with Globally Aligned Local Rewards](https://arxiv.org/pdf/2507.03041). <a href="https://github.com/snap-stanford/optimas" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [Improving Retrieval-Augmented Generation through Multi-Agent Reinforcement Learning](https://arxiv.org/pdf/2501.15228). <a href="https://github.com/chenyiqun/MMOA-RAG" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [Heterogeneous Group-Based Reinforcement Learning for LLM-based Multi-Agent Systems](https://arxiv.org/pdf/2506.02718).
 
 ---
 
