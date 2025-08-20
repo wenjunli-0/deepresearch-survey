@@ -19,7 +19,7 @@ We organize RL-based advancements along three primary axes that capture the key 
    - **2.3 Multimodal and Multi-Tool Integration** - Integration of multimodal perception with multi-tool action interfaces
 3. **Systems & Infrastructure** - Scaffolding that makes agentic RL feasible at scale: reproducible environments and tool/API sandboxes; asynchronous actors and rollout collection; caching and rate-limit handling; compute/memory management; distributed training; and logging/evaluation harnesses.
 
-### **Secondary Focus 1: Agent Topology & Coordination**
+### **Secondary Focus 1: Agent Architecture & Coordination**
 Explores hierarchical, modular, and multi-agent designs for structural composition of research agents.
 
 ### **Secondary Focus 2: Evaluations & Benchmarks**
@@ -53,7 +53,7 @@ This section provides an overview of existing surveys in related areas to deep r
 - [Systems & Infrastructure](#3-systems--infrastructure)
 
 ### Secondary Focuses
-- [Agent Topology & Coordination](#secondary-focus-1-agent-topology--coordination)
+- [Agent Architecture & Coordination](#secondary-focus-1-agent-architecture--coordination)
 - [Evaluations & Benchmarks](#secondary-focus-2-evaluations--benchmarks)
 
 ### Additional Resources
@@ -189,7 +189,7 @@ Scaffolding that makes agentic RL feasible at scale: reproducible environments a
 
 ---
 
-## Secondary Focus 1: Agent Topology & Coordination
+## Secondary Focus 1: Agent Architecture & Coordination
 
 Explores hierarchical, modular, and multi-agent designs for structural composition of research agents. This includes multi-agent systems, self-reflective loops, hierarchical planners, expert routing, or modular sub-agent coordination.
 
@@ -200,8 +200,6 @@ Explores hierarchical, modular, and multi-agent designs for structural compositi
 - [PaSa: An LLM Agent for Comprehensive Academic Paper Search](https://arxiv.org/pdf/2501.10120). <a href="https://github.com/bytedance/pasahttps://github.com/bytedance/pasa" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning](https://arxiv.org/pdf/2506.13654). <a href="https://egolife-ai.github.io/Ego-R1/" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [OWL: Optimized Workforce Learning for General Multi-Agent Assistance in Real-World Task Automation](https://arxiv.org/pdf/2505.23885). <a href="https://github.com/camel-ai/owl" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
-- [Heterogeneous Group-Based Reinforcement Learning for LLM-based Multi-Agent Systems](https://arxiv.org/pdf/2506.02718).
-- [Knowledge-Aware Iterative Retrieval for Multi-Agent Systems](https://arxiv.org/pdf/2503.13275).
 
 ---
 
