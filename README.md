@@ -99,19 +99,12 @@ Determines when learning happens and what data is used. Papers in this category 
 - [R1-Searcher: Incentivizing the Search Capability in LLMs via Reinforcement Learning](https://arxiv.org/pdf/2503.05592). <a href="https://github.com/RUCAIBox/R1-Searcher" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [ZeroSearch: Incentivize the Search Capability of LLMs without Searching](https://arxiv.org/pdf/2505.04588). <a href="https://github.com/Alibaba-NLP/ZeroSearch" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [s3: You Don't Need That Much Data to Train a Search Agent via RL](https://arxiv.org/pdf/2505.14146). <a href="https://github.com/pat-jj/s3" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
-- [Visual Agentic Reinforcement Fine-Tuning](https://arxiv.org/pdf/2505.14246). <a href="https://github.com/Liuziyu77/Visual-RFT/tree/main/Visual-ARFT" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
-- [VRAG-RL: Empower Vision-Perception-Based RAG for Visually Rich Information Understanding via Iterative Reasoning with Reinforcement Learning](https://arxiv.org/pdf/2505.22019). <a href="https://github.com/Alibaba-NLP/VRAG" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [Reasoning-Table: Exploring Reinforcement Learning for Table Reasoning](https://arxiv.org/pdf/2506.01710). <a href="https://github.com/MJinXiang/Reasoning-Table" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
-- [Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning](https://arxiv.org/pdf/2506.13654). <a href="https://github.com/egolife-ai/Ego-R1" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [Search and Refine During Think: Autonomous Retrieval-Augmented Reasoning of LLMs](https://arxiv.org/pdf/2505.11277). <a href="https://github.com/syr-cn/AutoRefine" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [Agentic Reinforced Policy Optimization](https://arxiv.org/pdf/2507.19849). <a href="https://github.com/SiliangZeng/Multi-Turn-RL-Agent" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [MEM1: Learning to Synergize Memory and Reasoning for Efficient Long-Horizon Agents](https://arxiv.org/pdf/2506.15841). <a href="https://github.com/MIT-MI/MEM1" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
-- [Harnessing the Power of Reinforcement Learning for Language-Model-Based Information Retriever via Query-Document Co-Augmentation](https://arxiv.org/pdf/2506.18670). <a href="https://github.com/liujm2001/CoAugRetriever" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [RAG-R1 : Incentivize the Search and Reasoning Capabilities of LLMs through Multi-query Parallelism](https://arxiv.org/pdf/2507.02962). <a href="https://github.com/inclusionAI/AgenticLearning/tree/main/RAG-R1" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
-- [Writing-RL: Advancing Long-form Writing via Adaptive Curriculum Reinforcement Learning](https://arxiv.org/pdf/2506.05760). <a href="https://github.com/Tongyi-Zhiwen/Writing-RL" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
-- [LongWriter-Zero: Mastering Ultra-Long Text Generation via Reinforcement Learning](https://arxiv.org/pdf/2506.18841). [Data and Model](https://huggingface.co/THU-KEG/)
 - [FrugalRAG: Learning to retrieve and reason for multi-hop QA](https://arxiv.org/pdf/2507.07634). 
-- [Curriculum Guided Reinforcement Learning for Efficient Multi-Hop Retrieval-Augmented Generation](https://arxiv.org/pdf/2505.17391).
 - [EvolveSearch: An Iterative Self-Evolving Search Agent](https://arxiv.org/pdf/2505.22501).
 
 ---
@@ -128,19 +121,15 @@ Designs or analyzes how reward signals are defined or distributed for long horiz
 - [O2-Searcher: A Searching-based Agent Model for Open-Domain Open-Ended Question Answering](https://arxiv.org/pdf/2505.16582). <a href="https://github.com/KnowledgeXLab/O2-Searcher" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [R1-Searcher++: Incentivizing the Dynamic Knowledge Acquisition of LLMs via Reinforcement Learning](https://arxiv.org/pdf/2505.17005). <a href="https://github.com/RUCAIBox/R1-Searcher-plus" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [Reinforced Internal-External Knowledge Synergistic Reasoning for Efficient Adaptive Search Agent](https://arxiv.org/pdf/2505.07596). <a href="https://github.com/hzy312/knowledge-r1" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
-- [Writing-RL: Advancing Long-form Writing via Adaptive Curriculum Reinforcement Learning](https://arxiv.org/pdf/2506.05760). <a href="https://github.com/Tongyi-Zhiwen/Writing-RL" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [KnowRL: Exploring Knowledgeable Reinforcement Learning for Factuality](https://www.arxiv.org/pdf/2506.19807). <a href="https://github.com/zjunlp/KnowRL" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [StepSearch: Igniting LLMs Search Ability via Step-Wise Proximal Policy Optimization](https://arxiv.org/pdf/2505.15107). <a href="https://github.com/Zillwang/StepSearch" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [R-Search: Empowering LLM Reasoning with Search via Multi-Reward Reinforcement Learning](https://arxiv.org/pdf/2506.04185). <a href="https://github.com/QingFei1/R-Search" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [Search and Refine During Think: Autonomous Retrieval-Augmented Reasoning of LLMs](https://arxiv.org/pdf/2505.11277). <a href="https://github.com/syr-cn/AutoRefine" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
-- [Harnessing the Power of Reinforcement Learning for Language-Model-Based Information Retriever via Query-Document Co-Augmentation](https://arxiv.org/pdf/2506.18670). <a href="https://github.com/liujm2001/CoAugRetriever" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
-- [Harnessing the Power of Reinforcement Learning for Language-Model-Based Information Retriever via Query-Document Co-Augmentation](https://arxiv.org/pdf/2506.18670). <a href="https://github.com/liujm2001/CoAugRetriever" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [VRAG-RL: Empower Vision-Perception-Based RAG for Visually Rich Information Understanding via Iterative Reasoning with Reinforcement Learning](https://arxiv.org/pdf/2505.22019). <a href="https://github.com/Alibaba-NLP/VRAG" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [Visual Agentic Reinforcement Fine-Tuning](https://arxiv.org/pdf/2505.14246). <a href="https://github.com/Liuziyu77/Visual-RFT/tree/main/Visual-ARFT" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [Reasoning-Table: Exploring Reinforcement Learning for Table Reasoning](https://arxiv.org/pdf/2506.01710). <a href="https://github.com/MJinXiang/Reasoning-Table" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [Reinforcement Fine-Tuning for Reasoning towards Multi-Step Multi-Source Search in Large Language Models](https://arxiv.org/pdf/2506.08352). <a href="https://github.com/wentao0429/ReasoningSearch" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [Pangu DeepDiver: Adaptive Search Intensity Scaling via Open-Web Reinforcement Learning](https://arxiv.org/pdf/2505.24332).
-- [LongWriter-Zero: Mastering Ultra-Long Text Generation via Reinforcement Learning](https://arxiv.org/pdf/2506.18841). [Data and Model](https://huggingface.co/THU-KEG/)
 - [Agentic Reasoning and Tool Integration for LLMs via Reinforcement Learning](https://arxiv.org/pdf/2505.01441).
 - [SAGE: Strategy-Adaptive Generation Engine for Query Rewriting](https://www.arxiv.org/pdf/2506.19783).
 - [Lessons from Training Grounded LLMs with Verifiable Rewards](https://arxiv.org/pdf/2506.15522).
@@ -154,19 +143,23 @@ Designs or analyzes how reward signals are defined or distributed for long horiz
 Integration of multimodal perception with multi-tool action interfaces. Interacts with `multiple modalities` (e.g., vision, text, audio) or makes use of `multiple tool types` beyond simple textual search. Examples include code interpreters, calculators, visual reasoning modules, data extraction tools, or APIs. Work that couples reward across modalities should also be categorized here (not under Category 2.2).
 
 **Key Papers:**
-- [ReTool: Reinforcement Learning for Strategic Tool Use in LLMs](https://arxiv.org/pdf/2504.11536). <a href="https://retool-rl.github.io/" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
-- [Tool-Star: Empowering LLM-Brained Multi-Tool Reasoner via Reinforcement Learning](https://github.com/dongguanting/Tool-Star). <a href="https://retool-rl.github.io/" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
-- [MMSearch-R1: Incentivizing LMMs to Search](https://arxiv.org/pdf/2506.20670). <a href="https://github.com/EvolvingLMMs-Lab/multimodal-search-r1" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
-- [Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning](https://arxiv.org/pdf/2506.13654). <a href="https://egolife-ai.github.io/Ego-R1/" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
-- [VTool-R1: VLMs Learn to Think with Images via Reinforcement Learning on Multimodal Tool Use](https://arxiv.org/pdf/2505.19255). <a href="https://github.com/VTool-R1/VTool-R1" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
-- [VRAG-RL: Empower Vision-Perception-Based RAG for Visually Rich Information Understanding via Iterative Reasoning with Reinforcement Learning](https://arxiv.org/pdf/2505.22019). <a href="https://github.com/Alibaba-NLP/VRAG" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
-- [OWL: Optimized Workforce Learning for General Multi-Agent Assistance in Real-World Task Automation](https://arxiv.org/pdf/2505.23885). <a href="https://github.com/camel-ai/owl" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+**End-to-End Multimodal Models**
 - [Visual Agentic Reinforcement Fine-Tuning](https://arxiv.org/pdf/2505.14246). <a href="https://github.com/Liuziyu77/Visual-RFT/tree/main/Visual-ARFT" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
-- [Nemotron-Research-Tool-N1: Tool-Using Language Models with Reinforced Reasoning](https://arxiv.org/pdf/2505.00024). <a href="https://github.com/NVlabs/Tool-N1" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [VRAG-RL: Empower Vision-Perception-Based RAG for Visually Rich Information Understanding via Iterative Reasoning with Reinforcement Learning](https://arxiv.org/pdf/2505.22019). <a href="https://github.com/Alibaba-NLP/VRAG" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [MMSearch-R1: Incentivizing LMMs to Search](https://arxiv.org/pdf/2506.20670). <a href="https://github.com/EvolvingLMMs-Lab/multimodal-search-r1" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [VTool-R1: VLMs Learn to Think with Images via Reinforcement Learning on Multimodal Tool Use](https://arxiv.org/pdf/2505.19255). <a href="https://github.com/VTool-R1/VTool-R1" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+
+**Tool-Augmented Language Models**
+- [Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning](https://arxiv.org/pdf/2506.13654). <a href="https://github.com/egolife-ai/Ego-R1" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [Enhancing LLMs' Reasoning-Intensive Multimedia Search Capabilities through Fine-Tuning and Reinforcement Learning](https://arxiv.org/pdf/2505.18831)
-- [Coordinating Search-Informed Reasoning and Reasoning-Guided Search in Claim Verification](http://arxiv.org/pdf/2506.07528).
-- [Agentic Reasoning and Tool Integration for LLMs via Reinforcement Learning](https://arxiv.org/pdf/2505.01441).
-- [Agent-RLVR: Training Software Engineering Agents via Guidance and Environment Rewards](https://arxiv.org/pdf/2506.11425).
+
+<!-- **To-be Classified** -->
+<!-- - [ReTool: Reinforcement Learning for Strategic Tool Use in LLMs](https://arxiv.org/pdf/2504.11536). <a href="https://retool-rl.github.io/" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a> -->
+<!-- - [Tool-Star: Empowering LLM-Brained Multi-Tool Reasoner via Reinforcement Learning](https://arxiv.org/pdf/2505.16410). <a href="https://retool-rl.github.io/" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a> -->
+<!-- - [Nemotron-Research-Tool-N1: Tool-Using Language Models with Reinforced Reasoning](https://arxiv.org/pdf/2505.00024). <a href="https://github.com/NVlabs/Tool-N1" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a> -->
+<!-- - [Coordinating Search-Informed Reasoning and Reasoning-Guided Search in Claim Verification](http://arxiv.org/pdf/2506.07528). -->
+<!-- - [Agentic Reasoning and Tool Integration for LLMs via Reinforcement Learning](https://arxiv.org/pdf/2505.01441). -->
+<!-- - [Agent-RLVR: Training Software Engineering Agents via Guidance and Environment Rewards](https://arxiv.org/pdf/2506.11425). -->
 
 ---
 
