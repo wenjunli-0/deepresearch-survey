@@ -27,6 +27,8 @@ Comprehensive evaluation frameworks for holistic, tool-interactive assessment of
 
 _Note: Some key papers may appear in more than one category if they contribute equally to multiple aspects._
 
+_Ordering: Within each list, key papers are ordered by descending GitHub repository stars as of Aug 25, 2025._
+
 ## 📚 Related Surveys
 
 This section provides an overview of existing surveys in related areas to deep research systems.
