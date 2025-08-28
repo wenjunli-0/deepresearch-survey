@@ -53,7 +53,7 @@ This section provides an overview of existing surveys in related areas to deep r
 - [RL Methods for Agentsuric Research](#2-rl-methods-for-agentic-research)
   - [Training Regimes and Optimization Structure](#21-training-regimes-and-optimization-structure)
   - [Reward Design and Credit Assignment](#22-reward-design-and-credit-assignment)
-  - [Multimodal and Multi-Tool Integration](#23-multimodal-and-multi-tool-integration)
+  - [Multimodal Integration](#23-multimodal-integration)
 - [Systems & Infrastructure](#3-systems--infrastructure)
 
 ### Secondary Focuses
@@ -108,10 +108,10 @@ Determines when learning happens and what data is used. Papers in this category 
 - [Agentic Reinforced Policy Optimization](https://arxiv.org/pdf/2507.19849). <a href="https://github.com/SiliangZeng/Multi-Turn-RL-Agent" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [MEM1: Learning to Synergize Memory and Reasoning for Efficient Long-Horizon Agents](https://arxiv.org/pdf/2506.15841). <a href="https://github.com/MIT-MI/MEM1" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [RAG-R1 : Incentivize the Search and Reasoning Capabilities of LLMs through Multi-query Parallelism](https://arxiv.org/pdf/2507.02962). <a href="https://github.com/inclusionAI/AgenticLearning/tree/main/RAG-R1" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [Reinforcement Fine-Tuning for Reasoning towards Multi-Step Multi-Source Search in Large Language Models](https://arxiv.org/pdf/2506.08352). <a href="https://github.com/wentao0429/ReasoningSearch" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [FrugalRAG: Learning to retrieve and reason for multi-hop QA](https://arxiv.org/pdf/2507.07634). 
 - [EvolveSearch: An Iterative Self-Evolving Search Agent](https://arxiv.org/pdf/2505.22501).
 - [Agentic Reasoning and Tool Integration for LLMs via Reinforcement Learning](https://arxiv.org/pdf/2505.01441).
-- [Reinforcement Fine-Tuning for Reasoning towards Multi-Step Multi-Source Search in Large Language Models](https://arxiv.org/pdf/2506.08352). <a href="https://github.com/wentao0429/ReasoningSearch" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [Pangu DeepDiver: Adaptive Search Intensity Scaling via Open-Web Reinforcement Learning](https://arxiv.org/pdf/2505.24332).
 
 
@@ -140,12 +140,11 @@ Designs or analyzes how reward signals are defined or distributed for long horiz
 
 ---
 
-#### 2.3 Multimodal and Multi-Tool Integration
+#### 2.3 Multimodal Integration
 
-Integration of multimodal perception with multi-tool action interfaces. Interacts with `multiple modalities` (e.g., vision, text, audio) or makes use of `multiple tool types` beyond simple textual search. Examples include code interpreters, calculators, visual reasoning modules, data extraction tools, or APIs. Work that couples reward across modalities should also be categorized here (not under Category 2.2).
+End-to-end multimodal models that natively perceive and reason over multiple modalities (e.g., vision and language) without delegating core competence to external tool executors. This section focuses on vision–language models (VLMs) that perform iterative perception–reasoning cycles, directly ingesting visual evidence (images, charts, documents, UI screenshots, etc.) and producing grounded reasoning within a unified multimodal token space. We exclude systems whose multimodality is realized through auxiliary tools (e.g., separate OCR/vision pipelines, code interpreters, or retrieval modules).
 
 **Key Papers:**
-
 **(1) End-to-End Multimodal Models**
 - [Visual Agentic Reinforcement Fine-Tuning](https://arxiv.org/pdf/2505.14246). <a href="https://github.com/Liuziyu77/Visual-RFT/tree/main/Visual-ARFT" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [VRAG-RL: Empower Vision-Perception-Based RAG for Visually Rich Information Understanding via Iterative Reasoning with Reinforcement Learning](https://arxiv.org/pdf/2505.22019). <a href="https://github.com/Alibaba-NLP/VRAG" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
