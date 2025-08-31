@@ -109,10 +109,10 @@ Determines when learning happens and what data is used. Papers in this category 
 - [MEM1: Learning to Synergize Memory and Reasoning for Efficient Long-Horizon Agents](https://arxiv.org/pdf/2506.15841). <a href="https://github.com/MIT-MI/MEM1" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [RAG-R1 : Incentivize the Search and Reasoning Capabilities of LLMs through Multi-query Parallelism](https://arxiv.org/pdf/2507.02962). <a href="https://github.com/inclusionAI/AgenticLearning/tree/main/RAG-R1" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [Reinforcement Fine-Tuning for Reasoning towards Multi-Step Multi-Source Search in Large Language Models](https://arxiv.org/pdf/2506.08352). <a href="https://github.com/wentao0429/ReasoningSearch" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
-- [FrugalRAG: Learning to retrieve and reason for multi-hop QA](https://arxiv.org/pdf/2507.07634). 
-- [EvolveSearch: An Iterative Self-Evolving Search Agent](https://arxiv.org/pdf/2505.22501).
 - [Agentic Reasoning and Tool Integration for LLMs via Reinforcement Learning](https://arxiv.org/pdf/2505.01441).
 - [Pangu DeepDiver: Adaptive Search Intensity Scaling via Open-Web Reinforcement Learning](https://arxiv.org/pdf/2505.24332).
+- [EvolveSearch: An Iterative Self-Evolving Search Agent](https://arxiv.org/pdf/2505.22501).
+- [FrugalRAG: Learning to retrieve and reason for multi-hop QA](https://arxiv.org/pdf/2507.07634). 
 
 
 ---
