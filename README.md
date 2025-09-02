@@ -113,7 +113,6 @@ Determines when learning happens and what data is used. Papers in this category 
 - [Agentic Reasoning and Tool Integration for LLMs via Reinforcement Learning](https://arxiv.org/pdf/2505.01441).
 - [Reinforcement Fine-Tuning for Reasoning towards Multi-Step Multi-Source Search in Large Language Models](https://arxiv.org/pdf/2506.08352). <a href="https://github.com/wentao0429/ReasoningSearch" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [Pangu DeepDiver: Adaptive Search Intensity Scaling via Open-Web Reinforcement Learning](https://arxiv.org/pdf/2505.24332).
-- [Writing-RL: Advancing Long-form Writing via Adaptive Curriculum Reinforcement Learning](https://arxiv.org/pdf/2506.05760).
 
 ---
 
