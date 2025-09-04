@@ -181,6 +181,7 @@ Explores hierarchical, modular, and multi-agent designs for structural compositi
 
 **Key Papers:**
 - [OWL: Optimized Workforce Learning for General Multi-Agent Assistance in Real-World Task Automation](https://arxiv.org/pdf/2505.23885). <a href="https://github.com/camel-ai/owl" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [Chain-of-Agents: End-to-End Agent Foundation Models via Multi-Agent Distillation and Agentic RL](https://arxiv.org/pdf/2508.13167). <a href="https://github.com/OPPO-PersonalAI/Agent_Foundation_Models" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [PaSa: An LLM Agent for Comprehensive Academic Paper Search](https://arxiv.org/pdf/2501.10120). <a href="https://github.com/bytedance/pasa" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [WebThinker: Empowering Large Reasoning Models with Deep Research Capability](https://arxiv.org/pdf/2504.21776). <a href="https://github.com/RUC-NLPIR/WebThinker" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [DeepResearcher: Scaling Deep Research via Reinforcement Learning in Real-world Environments](https://arxiv.org/pdf/2504.03160). <a href="https://github.com/GAIR-NLP/DeepResearcher" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
