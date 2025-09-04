@@ -173,7 +173,7 @@ Scaffolding that makes agentic RL feasible at scale: reproducible environments a
 - [ROLL – Reinforcement Learning Optimization for LLMs](https://arxiv.org/pdf/2506.06122). <a href="https://github.com/alibaba/ROLL" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [slime: An SGLang-Native Post-Training Framework for RL Scaling](https://lmsys.org/blog/2025-07-09-slime/). <a href="https://github.com/THUDM/slime" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [Verifiers](https://verifiers.readthedocs.io/en/latest/overview.html#). <a href="https://github.com/willccbb/verifiers" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
-- [verl – Volcano Engine RL Training Library](https://arxiv.org/pdf/2409.19256v2) <a href="https://github.com/volcengine/verl" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [verl – Volcano Engine RL Training Library.](https://arxiv.org/pdf/2409.19256v2) <a href="https://github.com/volcengine/verl" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 
 ---
 
