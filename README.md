@@ -165,12 +165,14 @@ End-to-end multimodal models that natively perceive and reason over multiple mod
 Scaffolding that makes agentic RL feasible at scale: reproducible environments and tool/API sandboxes; asynchronous actors and rollout collection; caching and rate-limit handling; compute/memory management; distributed training; and logging/evaluation harnesses.
 
 **Key Papers and Repos:**
+- [Agent Lightning: Train ANY AI Agents with Reinforcement Learning](https://arxiv.org/pdf/2508.03680). <a href="https://github.com/microsoft/agent-lightning" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [AWorld: Orchestrating the Training Recipe for Agentic AI](https://arxiv.org/pdf/2508.20404). <a href="https://github.com/inclusionAI/AWorld/" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [AReaL: A Large-Scale Asynchronous Reinforcement Learning System for Language Reasoning](https://arxiv.org/pdf/2505.24298v2). <a href="https://github.com/inclusionAI/AReaL/" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [OpenR: An Open Source Framework for Advanced Reasoning with Large Language Models](https://arxiv.org/pdf/2410.09671). <a href="https://github.com/openreasoner/openr" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [rLLM – RL for Post-Training Language Agents](https://agentica-project.com/). <a href="https://github.com/agentica-project/rllm" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [ROLL – Reinforcement Learning Optimization for LLMs](https://arxiv.org/pdf/2506.06122). <a href="https://github.com/alibaba/ROLL" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
-- Qwen-Agent – Agent Framework for Qwen LLMs. <a href="https://github.com/QwenLM/Qwen-Agent" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
-- [OpenR – Open-Source Reasoning & RL Platform](https://arxiv.org/pdf/2410.09671) <a href="https://openreasoner.github.io/" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
-- [Agent Lightning – General RL Training for AI Agents](https://arxiv.org/pdf/2508.03680v1) <a href="https://github.com/microsoft/agent-lightning" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [slime: An SGLang-Native Post-Training Framework for RL Scaling](https://lmsys.org/blog/2025-07-09-slime/). <a href="https://github.com/THUDM/slime" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [Verifiers](https://verifiers.readthedocs.io/en/latest/overview.html#). <a href="https://github.com/willccbb/verifiers" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [verl – Volcano Engine RL Training Library](https://arxiv.org/pdf/2409.19256v2) <a href="https://github.com/volcengine/verl" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 
 ---
