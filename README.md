@@ -39,6 +39,9 @@ This section provides an overview of existing surveys in related areas to deep r
 - [A Survey of LLM-based Deep Search Agents: Paradigm, Optimization, Evaluation, and Challenges](https://arxiv.org/pdf/2508.05668)
 - [A Comprehensive Survey of Deep Research: Systems, Methodologies, and Applications](https://arxiv.org/pdf/2506.12594)
 - [Towards Agentic RAG with Deep Reasoning: A Survey of RAG-Reasoning Systems in LLMs](https://arxiv.org/pdf/2507.09477)
+- [Deep Research: A Survey of Autonomous Research Agents](https://arxiv.org/pdf/2508.12752)
+- [The Landscape of Agentic Reinforcement Learning for LLMs: A Survey](https://arxiv.org/pdf/2509.02547)
+
 
 ---
 
