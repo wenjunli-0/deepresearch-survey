@@ -3,7 +3,11 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](CONTRIBUTING.md)
 
-Deep research systems are agentic AI models that solve complex, multi-step information tasks by coordinating reasoning, search, and tool use—often under partial observability and non-stationary conditions. This survey centers on **reinforcement learning (RL) as the primary driver** of recent progress, arguing that trajectory-level optimization, exploration, and credit assignment are essential for end-to-end decision quality in tool-rich environments.
+## Abstract
+
+Deep research systems, agentic AI that solve complex, multi-step tasks by coordinating reasoning, search across the open web and user files, and tool use, are moving toward hierarchical deployments with a Planner, Coordinator, and Executors. In practice, training entire stacks end-to-end remains impractical, so most work trains a single planner connected to core tools such as search, browsing, and code. While SFT imparts protocol fidelity, it suffers from imitation and exposure biases and underuses environment feedback. Preference alignment methods such as DPO are schema- and proxy-dependent, off-policy, and weak for long-horizon credit assignment and multi-objective trade-offs. A further limitation of SFT and DPO is their reliance on human-defined decision points and subskills through schema design and labeled comparisons. Reinforcement learning aligns with closed-loop, tool-interaction research by optimizing trajectory-level policies, enabling exploration, recovery behaviors, and principled credit assignment, and it reduces dependence on such human priors and rater biases.
+
+This survey is, to our knowledge, the first dedicated to the RL foundations of deep research systems. It systematizes work after DeepSeek-R1 along three axes: (i) data synthesis and curation; (ii) RL methods for agentic research covering stability, sample efficiency, long context handling, reward and credit design, multi-objective optimization, and multimodal integration; and (iii) agentic RL training systems and frameworks. We also cover agent architecture and coordination, as well as evaluation and benchmarks, including recent QA, VQA, long-form synthesis, and domain-grounded, tool-interaction tasks. We distill recurring patterns, surface infrastructure bottlenecks, and offer practical guidance for training robust, transparent deep research agents with RL.
 
 ## 📋 Survey Structure
 
@@ -16,8 +20,8 @@ We organize RL-based advancements along three primary axes that capture the key 
 2. **RL Methods for Agentic Research** - Training-time choices that determine decision quality over trajectories: training regimes and optimization structure; reward design and credit assignment for long horizons and multi-objective trade-offs; and integration of multimodal perception with multi-tool action interfaces.
    - **2.1 Training Regimes and Optimization Structure** - New training procedures beyond standard reinforcement learning
    - **2.2 Reward Design and Credit Assignment** - Design and analysis of reward signals and distribution for long horizons and multi-objective trade-offs
-   - **2.3 Multimodal and Multi-Tool Integration** - Integration of multimodal perception with multi-tool action interfaces
-3. **Systems & Infrastructure** - Scaffolding that makes agentic RL feasible at scale: reproducible environments and tool/API sandboxes; asynchronous actors and rollout collection; caching and rate-limit handling; compute/memory management; distributed training; and logging/evaluation harnesses.
+   - **2.3 Multimodal Research Agents** - Integration of multimodal perception with multi-tool action interfaces
+3. **Agentic RL Training Frameworks** - Scaffolding that makes agentic RL feasible at scale: reproducible environments and tool/API sandboxes; asynchronous actors and rollout collection; caching and rate-limit handling; compute/memory management; distributed training; and logging/evaluation harnesses.
 
 ### **Secondary Focus 1: Agent Architecture & Coordination**
 Explores hierarchical, modular, and multi-agent designs for structural composition of research agents.
@@ -26,8 +30,6 @@ Explores hierarchical, modular, and multi-agent designs for structural compositi
 Comprehensive evaluation frameworks for holistic, tool-interactive assessment of research agents.
 
 _Note: Some key papers may appear in more than one category if they contribute equally to multiple aspects._
-
-_Ordering: Within each list, key papers are ordered by descending GitHub repository stars as of Aug 25, 2025._
 
 ## 📚 Related Surveys
 
@@ -48,24 +50,27 @@ This section provides an overview of existing surveys in related areas to deep r
 
 ## 📑 Table of Contents
 
-### Introduction
-- [Related Surveys](#-related-surveys)
+### Overview
+- [Abstract](#abstract)
+- [Survey Structure](#survey-structure)
+- [Related Surveys](#related-surveys)
 
 ### Primary Focus: RL Foundations
 - [Data Synthesis & Curation](#1-data-synthesis--curation)
-- [RL Methods for Agentsuric Research](#2-rl-methods-for-agentic-research)
+- [RL Methods for Agentic Research](#2-rl-methods-for-agentic-research)
   - [Training Regimes and Optimization Structure](#21-training-regimes-and-optimization-structure)
   - [Reward Design and Credit Assignment](#22-reward-design-and-credit-assignment)
-  - [Multimodal Integration](#23-multimodal-integration)
-- [Systems & Infrastructure](#3-systems--infrastructure)
+  - [Multimodal Research Agents](#23-multimodal-research-agents)
+- [Agentic RL Training Frameworks](#3-agentic-rl-training-frameworks)
 
-### Secondary Focuses
+### Secondary Focus Areas
 - [Agent Architecture & Coordination](#secondary-focus-1-agent-architecture--coordination)
 - [Evaluations & Benchmarks](#secondary-focus-2-evaluations--benchmarks)
 
 ### Additional Resources
 - [Contributing](#contributing)
 - [Citation](#citation)
+- [License](#license)
 
 ---
 
@@ -121,7 +126,7 @@ Determines when learning happens and what data is used. Papers in this category 
 
 #### 2.2 Reward Design and Credit Assignment
 
-Designs or analyzes how reward signals are defined or distributed for long horizons and multi-objective trade-offs. This includes final outcome rewards, intermediate/step-level rewards, and shaped or multi-component objective functions. Long-horizon return handling is not categorized here (see Category 1), or modality-specific reward coupling (see Category 2.3).
+Designs or analyzes how reward signals are defined or distributed for long horizons and multi-objective trade-offs. This includes final outcome rewards, intermediate/step-level rewards, and shaped or multi-component objective functions. Long-horizon return handling is not categorized here (see Section 2.1), nor modality-specific reward coupling (see Section 2.3).
 
 **Key Papers:**
 - [s3: You Don't Need That Much Data to Train a Search Agent via RL](https://arxiv.org/pdf/2505.14146). <a href="https://github.com/pat-jj/s3" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
@@ -134,15 +139,9 @@ Designs or analyzes how reward signals are defined or distributed for long horiz
 - [R-Search: Empowering LLM Reasoning with Search via Multi-Reward Reinforcement Learning](https://arxiv.org/pdf/2506.04185). <a href="https://github.com/QingFei1/R-Search" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 
 
-<!-- **Irrelevant Papers** -->
-<!-- - [KnowRL: Exploring Knowledgeable Reinforcement Learning for Factuality](https://www.arxiv.org/pdf/2506.19807). <a href="https://github.com/zjunlp/KnowRL" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a> -->
-<!-- - [Lessons from Training Grounded LLMs with Verifiable Rewards](https://arxiv.org/pdf/2506.15522). -->
-<!-- - [SAGE: Strategy-Adaptive Generation Engine for Query Rewriting](https://www.arxiv.org/pdf/2506.19783). -->
-
-
 ---
 
-#### 2.3 Multimodal Integration
+#### 2.3 Multimodal Research Agents
 
 End-to-end multimodal models that natively perceive and reason over multiple modalities (e.g., vision and language) without delegating core competence to external tool executors. This section focuses on vision–language models (VLMs) that perform iterative perception–reasoning cycles, directly ingesting visual evidence (images, charts, documents, UI screenshots, etc.) and producing grounded reasoning within a unified multimodal token space. We exclude systems whose multimodality is realized through auxiliary tools (e.g., separate OCR/vision pipelines, code interpreters, or retrieval modules).
 
@@ -163,7 +162,7 @@ End-to-end multimodal models that natively perceive and reason over multiple mod
 
 ---
 
-### 3. Systems & Infrastructure
+### 3. Agentic RL Training Frameworks
 
 Scaffolding that makes agentic RL feasible at scale: reproducible environments and tool/API sandboxes; asynchronous actors and rollout collection; caching and rate-limit handling; compute/memory management; distributed training; and logging/evaluation harnesses.
 
@@ -176,6 +175,7 @@ Scaffolding that makes agentic RL feasible at scale: reproducible environments a
 - [ROLL – Reinforcement Learning Optimization for LLMs](https://arxiv.org/pdf/2506.06122). <a href="https://github.com/alibaba/ROLL" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [slime: An SGLang-Native Post-Training Framework for RL Scaling](https://lmsys.org/blog/2025-07-09-slime/). <a href="https://github.com/THUDM/slime" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [Verifiers](https://verifiers.readthedocs.io/en/latest/overview.html#). <a href="https://github.com/willccbb/verifiers" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [Verifiers](https://verifiers.readthedocs.io/en/latest/overview.html). <a href="https://github.com/willccbb/verifiers" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [verl – Volcano Engine RL Training Library.](https://arxiv.org/pdf/2409.19256v2) <a href="https://github.com/volcengine/verl" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 
 ---
@@ -201,12 +201,42 @@ Explores hierarchical, modular, and multi-agent designs for structural compositi
 
 Comprehensive evaluation frameworks for holistic, tool-interactive assessment of research agents. This section discusses:
 
-- **Objective Queries:** Standardized tasks with clear, measurable answers.
-- **Subjective Queries:** Open-ended or interpretive tasks requiring nuanced evaluation.
-- **General Agent Tasks:** Multi-step or integrated research challenges that test the full pipeline.
+- **QA/VQA Benchmarks:** Stress final answer accuracy under retrieval and browsing.
+- **Long-Form Text Benchmarks:** Long form synthesis, which assesses the quality of extended reports.
+- **Domain-Grounded Benchmarks:** End-to-end task execution with tools.
 
 **Key Papers:**
-- [Papers will be added here]
+**QA/VQA Benchmarks:**
+- [HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering](https://arxiv.org/pdf/1809.09600). <a href="https://hotpotqa.github.io/" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [Constructing A Multi-hop QA Dataset for Comprehensive Evaluation of Reasoning Steps](https://arxiv.org/pdf/2011.01060). <a href="https://rajpurkar.github.io/SQuAD-explorer/" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [Natural Questions: A Benchmark for Question Answering Research](https://aclanthology.org/Q19-1026.pdf). <a href="https://github.com/openai/simple-evals" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [MuSiQue: Multihop Questions via Single-hop Question Composition](https://arxiv.org/pdf/2108.00573). <a href="https://github.com/stonybrooknlp/musique" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [FEVER: a Large-scale Dataset for Fact Extraction and VERification](https://aclanthology.org/N18-1074.pdf). <a href="https://github.com/awslabs/fever" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [Measuring and Narrowing the Compositionality Gap in Language Models](https://arxiv.org/pdf/2210.03350). <a href="https://github.com/ofirpress/self-ask" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [Frames: A Corpus for Adding Memory to Goal-Oriented Dialogue Systems](https://arxiv.org/pdf/1704.00057). <a href="http://datasets.maluuba.com/Frames" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [BrowseComp: A Simple Yet Challenging Benchmark for Browsing Agents](https://arxiv.org/pdf/2504.12516). <a href="https://github.com/openai/simple-evals" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [BrowseComp-ZH: Benchmarking Web Browsing Ability of Large Language Models in Chinese](https://arxiv.org/pdf/2504.19314). <a href="https://github.com/PALIN2018/BrowseComp-ZH" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [InfoDeepSeek: Benchmarking Agentic Information Seeking for Retrieval-Augmented Generation](https://arxiv.org/pdf/2505.15872). <a href="https://infodeepseek.github.io/" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [WebWalker: Benchmarking LLMs in Web Traversal](https://arxiv.org/pdf/2501.07572). <a href="https://github.com/Alibaba-NLP/WebAgent" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [WideSearch: Benchmarking Agentic Broad Info-Seeking](https://arxiv.org/pdf/2508.07999). <a href="https://github.com/ByteDance-Seed/WideSearch" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [MMSearch: Benchmarking the Potential of Large Models as Multi-modal Search Engines](https://arxiv.org/pdf/2409.12959). <a href="https://mmsearch.github.io/" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [MRAMG-Bench: A Comprehensive Benchmark for Advancing Multimodal Retrieval-Augmented Multimodal Generation](https://arxiv.org/pdf/2502.04176). <a href="https://github.com/MRAMG-Bench/MRAMG" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [Benchmarking Retrieval-Augmented Generation in Multi-Modal Contexts](https://arxiv.org/pdf/2502.17297). <a href="https://github.com/NEUIR/M2RAG" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [MM-BrowseComp: A Comprehensive Benchmark for Multimodal Browsing Agents](https://arxiv.org/pdf/2508.13186). <a href="https://github.com/MMBrowseComp/MM-BrowseComp" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [OmniBench: Towards The Future of Universal Omni-Language Models](https://arxiv.org/pdf/2409.15272). <a href="https://github.com/multimodal-art-projection/OmniBench" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+
+- **Long-Form Text Benchmarks:** 
+- [PROXYQA: An Alternative Framework for Evaluating Long-Form Text Generation with Large Language Models](https://arxiv.org/pdf/2401.15042). <a href="https://proxy-qa.com/" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [WritingBench: A Comprehensive Benchmark for Generative Writing](https://arxiv.org/pdf/2503.05244). <a href="https://github.com/X-PLUG/WritingBench" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [LongEval: A Comprehensive Analysis of Long-Text Generation Through a Plan-based Paradigm](https://arxiv.org/pdf/2502.19103). <a href="https://github.com/Wusiwei0410/LongEval" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [DeepResearch Bench: A Comprehensive Benchmark for Deep Research Agents](https://arxiv.org/pdf/2409.15272). <a href="https://github.com/Ayanami0730/deep_research_bench" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+
+- **Domain-Grounded Benchmarks:**
+- [xbench: Tracking Agents Productivity Scaling with Profession-Aligned Real-World Evaluations](https://www.arxiv.org/pdf/2506.13651). <a href="https://xbench.org/" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [τ2-Bench: Evaluating Conversational Agents in a Dual-Control Environment](https://arxiv.org/pdf/2506.07982). <a href="https://github.com/sierra-research/tau2-bench" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [Finance Agent Benchmark: Benchmarking LLMs on Real-world Financial Research Tasks](https://arxiv.org/pdf/2508.00828). <a href="https://github.com/vals-ai/finance-agent" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [FinGAIA: A Chinese Benchmark for AI Agents in Real-World Financial Domain](https://arxiv.org/pdf/2507.17186). <a href="https://github.com/SUFEAIFLM-Lab/FinGAIA" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
+- [OdysseyBench: Evaluating LLM Agents on Long-Horizon Complex Office Application Workflows](https://arxiv.org/pdf/2508.09124).
 
 ---
 
@@ -233,12 +263,12 @@ If you find this survey useful for your research, please consider citing:
 ```bibtex
 @misc{deepresearch-survey-2025,
   title={Reinforcement Learning Foundations for Deep Research Systems: A Survey},
-  author={[Author names will be added]},
+  author={Wenjun Li, Zhi Chen, Hannan Cao, Jingru Lin, Wei Han, Sheng Liang, Zhi Zhang, Kuicai Dong, Yong Liu},
   year={2025},
-  url={https://github.com/[username]/deepresearch-survey}
+  url={https://github.com/wenjunli-0/deepresearch-survey}
 }
 ```
-```
+ 
 
 ---
 
