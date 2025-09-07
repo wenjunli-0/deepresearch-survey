@@ -1,7 +1,6 @@
 # Reinforcement Learning Foundations for Deep Research Systems: A Survey
 
 [![arXiv](https://img.shields.io/badge/arXiv-xxx-red.svg)](xxx)
-[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](CONTRIBUTING.md)
 
 ## Abstract
 
