@@ -1,5 +1,6 @@
 # Reinforcement Learning Foundations for Deep Research Systems: A Survey
 
+[![arXiv](https://img.shields.io/badge/arXiv-xxx-red.svg)](xxx)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](CONTRIBUTING.md)
 
@@ -206,7 +207,6 @@ Comprehensive evaluation frameworks for holistic, tool-interactive assessment of
 - **Domain-Grounded Benchmarks:** End-to-end task execution with tools.
 
 **Key Papers:**
-**QA/VQA Benchmarks:**
 - [HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering](https://arxiv.org/pdf/1809.09600). <a href="https://hotpotqa.github.io/" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [Constructing A Multi-hop QA Dataset for Comprehensive Evaluation of Reasoning Steps](https://arxiv.org/pdf/2011.01060). <a href="https://rajpurkar.github.io/SQuAD-explorer/" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [Natural Questions: A Benchmark for Question Answering Research](https://aclanthology.org/Q19-1026.pdf). <a href="https://github.com/openai/simple-evals" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
@@ -224,14 +224,10 @@ Comprehensive evaluation frameworks for holistic, tool-interactive assessment of
 - [Benchmarking Retrieval-Augmented Generation in Multi-Modal Contexts](https://arxiv.org/pdf/2502.17297). <a href="https://github.com/NEUIR/M2RAG" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [MM-BrowseComp: A Comprehensive Benchmark for Multimodal Browsing Agents](https://arxiv.org/pdf/2508.13186). <a href="https://github.com/MMBrowseComp/MM-BrowseComp" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [OmniBench: Towards The Future of Universal Omni-Language Models](https://arxiv.org/pdf/2409.15272). <a href="https://github.com/multimodal-art-projection/OmniBench" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
-
-- **Long-Form Text Benchmarks:** 
 - [PROXYQA: An Alternative Framework for Evaluating Long-Form Text Generation with Large Language Models](https://arxiv.org/pdf/2401.15042). <a href="https://proxy-qa.com/" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [WritingBench: A Comprehensive Benchmark for Generative Writing](https://arxiv.org/pdf/2503.05244). <a href="https://github.com/X-PLUG/WritingBench" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [LongEval: A Comprehensive Analysis of Long-Text Generation Through a Plan-based Paradigm](https://arxiv.org/pdf/2502.19103). <a href="https://github.com/Wusiwei0410/LongEval" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [DeepResearch Bench: A Comprehensive Benchmark for Deep Research Agents](https://arxiv.org/pdf/2409.15272). <a href="https://github.com/Ayanami0730/deep_research_bench" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
-
-- **Domain-Grounded Benchmarks:**
 - [xbench: Tracking Agents Productivity Scaling with Profession-Aligned Real-World Evaluations](https://www.arxiv.org/pdf/2506.13651). <a href="https://xbench.org/" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [τ2-Bench: Evaluating Conversational Agents in a Dual-Control Environment](https://arxiv.org/pdf/2506.07982). <a href="https://github.com/sierra-research/tau2-bench" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
 - [Finance Agent Benchmark: Benchmarking LLMs on Real-world Financial Research Tasks](https://arxiv.org/pdf/2508.00828). <a href="https://github.com/vals-ai/finance-agent" target="_blank"><img src="assets/github-mark.svg" alt="GitHub" width="16" height="16"></a>
@@ -239,22 +235,6 @@ Comprehensive evaluation frameworks for holistic, tool-interactive assessment of
 - [OdysseyBench: Evaluating LLM Agents on Long-Horizon Complex Office Application Workflows](https://arxiv.org/pdf/2508.09124).
 
 ---
-
-## 🤝 Contributing
-
-We welcome contributions to this survey! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details on how to:
-
-- Add new papers or repositories
-- Suggest new categories or reorganization
-- Report errors or outdated information
-- Propose improvements to the survey structure
-
-### How to Contribute
-
-1. Fork this repository
-2. Create a new branch for your contribution
-3. Add your content following the established format
-4. Submit a pull request with a clear description of your changes
 
 ## 📚 Citation
 
@@ -269,11 +249,6 @@ If you find this survey useful for your research, please consider citing:
 }
 ```
  
-
----
-
-**Last Updated:** [Date will be updated]  
-**Maintainers:** [Maintainer information will be added]
 
 ## 📄 License
 
