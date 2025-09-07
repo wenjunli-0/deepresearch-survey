@@ -1,7 +1,6 @@
 # Reinforcement Learning Foundations for Deep Research Systems: A Survey
 
 [![arXiv](https://img.shields.io/badge/arXiv-xxx-red.svg)](xxx)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](CONTRIBUTING.md)
 
 ## Abstract
@@ -248,8 +247,3 @@ If you find this survey useful for your research, please consider citing:
   url={https://github.com/wenjunli-0/deepresearch-survey}
 }
 ```
- 
-
-## 📄 License
-
-This work is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
