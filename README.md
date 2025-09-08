@@ -100,11 +100,11 @@ Methods to generate, select, and validate trajectory data that support multi-hop
 
 ### 2. RL Methods for Agentic Research
 
-Training-time choices that determine decision quality over trajectories: training regimes and optimization structure; reward design and credit assignment for long horizons and multi-objective trade-offs; and integration of multimodal perception with multi-tool action interfaces.
+Training-time choices that determine decision quality over trajectories: training regimes and optimization structure; reward design and credit assignment for long horizons and multi-objective trade-offs; and integration of multimodal perception.
 
 #### 2.1 Training Regimes and Optimization Structure
 
-Determines when learning happens and what data is used. Papers in this category propose new training procedures beyond standard reinforcement learning. This includes step-wise optimization, curriculum learning, multi-stage pipelines, or novel long-horizon credit handling (e.g., return decomposition, trajectory truncation). Use the standard `R1-like-training` as the default reference point. Note that vanilla preference optimization alone (e.g., basic DPO) is not considered sufficiently novel for this category.
+Determines when learning happens and what data is used. Papers in this category propose new training procedures beyond standard reinforcement learning. This includes step-wise optimization, curriculum learning, multi-stage pipelines, or novel long-horizon credit handling (e.g., return decomposition, trajectory truncation). Use the standard `DeepSeek-R1-style-training` as the default reference point. Note that we focus on end-to-end RL training rather than SFT/DPO approaches.
 
 | Paper Title | Paper Link | Code Link |
 |-------------|------------|------------------|
