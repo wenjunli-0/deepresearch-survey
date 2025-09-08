@@ -264,7 +264,7 @@ If you find this survey useful for your research, please consider citing:
 ```bibtex
 @misc{deepresearch-survey-2025,
   title={Reinforcement Learning Foundations for Deep Research Systems: A Survey},
-  author={Wenjun Li, Zhi Chen, Hannan Cao, Jingru Lin, Wei Han, Sheng Liang, Zhi Zhang, Kuicai Dong, Chen Zhang, Dexun Li, Yong Liu},
+  author={Wenjun Li, Zhi Chen, Jingru Lin, Hannan Cao, Wei Han, Sheng Liang, Zhi Zhang, Kuicai Dong, Dexun Li, Chen Zhang, Yong Liu},
   year={2025},
   url={https://github.com/wenjunli-0/deepresearch-survey}
 }
