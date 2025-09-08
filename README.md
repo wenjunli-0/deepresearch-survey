@@ -8,6 +8,8 @@ Deep research systems, agentic AI that solve complex, multi-step tasks by coordi
 
 This survey is, to our knowledge, the first dedicated to the RL foundations of deep research systems. It systematizes work after DeepSeek-R1 along three axes: (i) data synthesis and curation; (ii) RL methods for agentic research covering stability, sample efficiency, long context handling, reward and credit design, multi-objective optimization, and multimodal integration; and (iii) agentic RL training systems and frameworks. We also cover agent architecture and coordination, as well as evaluation and benchmarks, including recent QA, VQA, long-form synthesis, and domain-grounded, tool-interaction tasks. We distill recurring patterns, surface infrastructure bottlenecks, and offer practical guidance for training robust, transparent deep research agents with RL.
 
+<img src="assets/illustration.png" alt="Survey Overview" width="60%" style="display: block; margin: 0 auto;">
+
 ## 📋 Survey Structure
 
 This survey is organized around **one primary focus** and **two secondary areas**:
