@@ -114,6 +114,8 @@ Determines when learning happens and what data is used. Papers in this category 
 | ReSearch: Learning to Reason with Search for LLMs via Reinforcement Learning | [arXiv](https://arxiv.org/pdf/2503.19470) | [GitHub](https://github.com/Agent-RL/ReCall) |
 | R1-Searcher: Incentivizing the Search Capability in LLMs via Reinforcement Learning | [arXiv](https://arxiv.org/pdf/2503.05592) | [GitHub](https://github.com/RUCAIBox/R1-Searcher) |
 | ZeroSearch: Incentivize the Search Capability of LLMs without Searching | [arXiv](https://arxiv.org/pdf/2505.04588) | [GitHub](https://github.com/Alibaba-NLP/ZeroSearch) |
+| Beyond Ten Turns: Unlocking Long-Horizon Agentic Search with Large-Scale Asynchronous RL | [arXiv](https://arxiv.org/pdf/2508.07976) | [GitHub]( https://github.com/inclusionAI/ASearcher) |
+| SSRL: Self-Search Reinforcement Learning | [arXiv](https://arxiv.org/pdf/2508.10874) | [GitHub](https://github.com/TsinghuaC3I/SSRL) |
 | s3: You Don't Need That Much Data to Train a Search Agent via RL | [arXiv](https://arxiv.org/pdf/2505.14146) | [GitHub](https://github.com/pat-jj/s3) |
 | Reasoning-Table: Exploring Reinforcement Learning for Table Reasoning | [arXiv](https://arxiv.org/pdf/2506.01710) | [GitHub](https://github.com/MJinXiang/Reasoning-Table) |
 | Search and Refine During Think: Autonomous Retrieval-Augmented Reasoning of LLMs | [arXiv](https://arxiv.org/pdf/2505.11277) | [GitHub](https://github.com/syr-cn/AutoRefine) |
